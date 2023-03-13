@@ -303,8 +303,8 @@ GameObject:
   - component: {fileID: 915256486}
   - component: {fileID: 915256485}
   m_Layer: 0
-  m_Name: Platform_01
-  m_TagString: Untagged
+  m_Name: Floor
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -586,6 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  jumpSpeed: 10
 --- !u!50 &1559127993
 Rigidbody2D:
   serializedVersion: 4
