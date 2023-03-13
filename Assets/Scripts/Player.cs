@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField]private float speed;
     private Rigidbody2D playerBody;
-    private Animator animator;
+    // private Animator animator;
    
 // awake called everytime the scipt loads
     private void Awake() {
@@ -34,5 +34,7 @@ public class Player : MonoBehaviour
         // animator.SetBool("run", HorizontalInput !=0);
         
     }
+
+    
 
 }
