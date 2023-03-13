@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     // private Animator animator;
    
 // awake called everytime the scipt loads
-    private void Awake() {
+    private void Start() {
         playerBody = GetComponent<Rigidbody2D>();
         // animator = GetComponent<Animator>();
     }
@@ -20,9 +20,9 @@ public class Player : MonoBehaviour
 
     // Flip the character if its numbers are looking at scales
         if(HorizontalInput >0.01f){
-            transform.localScale = Vector3.one;
+            transform.localScale = new Vector3(0.25f,0.25f,0.25f);
         } else if(HorizontalInput < -0.01f){
-            transform.localScale = new Vector3(-1,1,1);
+            transform.localScale = new Vector3(-0.25f,0.25f,0.25f);
         }
         if(Input.GetKey(KeyCode.Space)){
             playerBody.velocity = new Vector2(playerBody.velocity.x, speed);
