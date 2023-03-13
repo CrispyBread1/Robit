@@ -2,65 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player: MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public Rigidbody rigidBody;
-    bool moveRight = false;
-    bool moveLeft = false;
-    // bool moveUp = false;
-    // bool moveDown = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        Rigidbody rigidBody = GetComponent<Rigidbody>();
+    [SerializeField]private float speed;
+    private Rigidbody2D playerBody;
+    private Animator animator;
+   
+// awake called everytime the scipt loads
+    private void Awake() {
+        playerBody = GetComponent<Rigidbody2D>();
+        // animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    private void Update() {
+        float HorizontalInput = Input.GetAxis("Horizontal");
+        playerBody.velocity = new Vector2(HorizontalInput * speed ,playerBody.velocity.y);
+
+    // Flip the character if its numbers are looking at scales
+        if(HorizontalInput >0.01f){
+            transform.localScale = Vector3.one;
+        } else if(HorizontalInput < -0.01f){
+            transform.localScale = new Vector3(-1,1,1);
+        }
+        if(Input.GetKey(KeyCode.Space)){
+            playerBody.velocity = new Vector2(playerBody.velocity.x, speed);
+        }
+
+        // set animator to true or false
+        // run name is equal to animation parameter in animation window
+        // horizontal is 0 (false) = idle animation
+        // animator.SetBool("run", HorizontalInput !=0);
         
-        if(Input.GetKeyDown(KeyCode.D)){
-            moveRight = true;
-            
-        } else if (Input.GetKeyUp(KeyCode.D)){
-            moveRight = false;
-        };
-
-        if(Input.GetKeyDown(KeyCode.A)){
-            moveLeft = true;
-        } else if (Input.GetKeyUp(KeyCode.A)){
-            moveLeft = false;
-        };
-
-        // if(Input.GetKeyDown(KeyCode.W)){
-        //     moveUp = true;
-        // } else if (Input.GetKeyUp(KeyCode.W)){
-        //     moveUp = false;
-        // };
-
-        // if(Input.GetKeyDown(KeyCode.S)){
-        //     moveDown = true;
-        // } else if (Input.GetKeyUp(KeyCode.S)){
-        //     moveDown = false;
-        // };
     }
 
-     private void FixedUpdate()
-    {
-        if (moveRight){
-            rigidBody.AddForce(Vector3.right * 1, ForceMode.VelocityChange);
-        }
-
-        if(moveLeft){
-            rigidBody.AddForce(Vector3.left * 1, ForceMode.VelocityChange);
-        }
-
-        // if(moveDown){
-        //     rigidBody.AddForce(Vector3.back * 1, ForceMode.VelocityChange);
-        // }
-
-        // if(moveUp){
-        //     rigidBody.AddForce(Vector3.forward * 1, ForceMode.VelocityChange);
-        // }
-    }
 }
