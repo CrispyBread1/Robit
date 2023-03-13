@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+
+
     [SerializeField]private float speed;
     private Rigidbody2D playerBody;
     // private Animator animator;
-    // private bool isJumping;
-    // [SerializeField]private float jump;
     private bool isGrounded;
     [SerializeField]public float jumpSpeed = 10f;
     
-   
+
+
+
+
 
     private void Start() {
 
@@ -37,12 +41,11 @@ public class Player : MonoBehaviour
         }
 
     // Jump -
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
-            {
-                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
-                    isGrounded = false;
-            }
-
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            playerBody.AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
+            isGrounded = false;
+        }
 
     // Animation -
         // set animator to true or false
@@ -51,24 +54,26 @@ public class Player : MonoBehaviour
         // animator.SetBool("run", HorizontalInput !=0);
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
-     {
-         if (other.gameObject.tag == "Floor" && isGrounded == false)
-         {
-             isGrounded = true;
-         }
-     }
+        public void OnCollisionEnter2D(Collision2D other)
+        {
+            // Check if the other object is a ground object
+            if (other.gameObject.CompareTag("Ground"))
+            {
+                // Get the contact points between the player and the ground
+                ContactPoint2D[] contacts = new ContactPoint2D[other.contactCount];
+                other.GetContacts(contacts);
 
+                // Check if any of the contact points are below the player
+                for (int i = 0; i < contacts.Length; i++)
+                {
+                    if (contacts[i].point.y < transform.position.y)
+                    {
+                        isGrounded = true;
+                        break;
+                    }
+                }
+            }
+}
 
-    // public void OnCollisionEnter(Collision collision)
-    // {
-    //     isGrounded = true;
-    //     Debug.Log("i have collided with ground");
-    // }
-
-    // public void OnCollisionExit(Collision collision)
-    // {
-    //     isGrounded = false;
-    // }
 
 }
