@@ -52,15 +52,15 @@ public class Player : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other)
-     {
+    {
         Debug.Log("am inside the on colllision");
 
-         if (other.gameObject.tag == "Floor" && isGrounded == false)
-         {
+        if (other.gameObject.tag == "Floor" && isGrounded == false)
+        {
             // Debug.Log("am inside the on colllision");
-             isGrounded = true;
-         }
-     }
+            isGrounded = true;
+        }
+    }
 
 
     // public void OnCollisionEnter(Collision collision)
