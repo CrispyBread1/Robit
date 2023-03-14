@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
 
     private float xMovement;
 
+    public float distanceChase;
+
     // Start is called before the first frame update
     public void Start()
     {
@@ -40,7 +42,7 @@ public class Enemy : MonoBehaviour
 
         //  X movement needed to reach the player at the wanted speed
         xMovement = Mathf.Sign(xDistance) * speed * Time.deltaTime;
-        if (xDistance < 4){
+        if (xDistance < distanceChase){
         // movement vector that only moves in the X direction
         Vector2 movement = new Vector2(xMovement, 0f);
 

@@ -1342,6 +1342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1559127988}
   speed: 1
+  distanceChase: 3
 --- !u!1001 &1308214829
 PrefabInstance:
   m_ObjectHideFlags: 0
