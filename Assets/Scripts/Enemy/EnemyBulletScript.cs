@@ -38,7 +38,7 @@ public class EnemyBulletScript : MonoBehaviour
 
         if(timer > 6)
         {
-            Destroy(rb);
+            Destroy(gameObject);
         }
     }
 
@@ -47,7 +47,7 @@ public class EnemyBulletScript : MonoBehaviour
     {
         if(hit.gameObject.CompareTag("Player"))
         {
-            Destroy(rb);
+            Destroy(gameObject);
         }
     }
 }
