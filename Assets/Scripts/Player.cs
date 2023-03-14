@@ -32,9 +32,9 @@ public class Player : MonoBehaviour
 
     // Flip the character if its numbers are looking at scales - 
         if(HorizontalInput >0.01f){
-            transform.localScale = new Vector3(0.25f,0.25f,0.25f);
+            transform.localScale = new Vector3(6f,6f,6f);
         } else if(HorizontalInput < -0.01f){
-            transform.localScale = new Vector3(-0.25f,0.25f,0.25f);
+            transform.localScale = new Vector3(-6f,6f,6f);
         }
 
     // Jump -
