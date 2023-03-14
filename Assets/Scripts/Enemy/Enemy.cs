@@ -40,12 +40,13 @@ public class Enemy : MonoBehaviour
 
         //  X movement needed to reach the player at the wanted speed
         xMovement = Mathf.Sign(xDistance) * speed * Time.deltaTime;
-
+        if (xDistance < 4){
         // movement vector that only moves in the X direction
         Vector2 movement = new Vector2(xMovement, 0f);
 
         // Move the enemy towards the player using the movement vector
         transform.position += (Vector3)movement;
+        }
 
 
     }
