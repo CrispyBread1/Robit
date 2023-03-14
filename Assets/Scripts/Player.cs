@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField]private float jumpSpeed = 10f;
     [SerializeField]private Health_Bar healthBar;
     
-   
+
 
     private void Start() {
 

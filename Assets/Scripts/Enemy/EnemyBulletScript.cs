@@ -36,7 +36,6 @@ public class EnemyBulletScript : MonoBehaviour
     {
         timer = Time.deltaTime;
 
-        if(timer > 10)
         {
             Destroy(gameObject);
         }
