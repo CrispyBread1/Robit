@@ -81,6 +81,7 @@ public class Player : MonoBehaviour
     public void die()
     {
         
+        // gameObject.SetActive(false);
     }
 
 
