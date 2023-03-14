@@ -17,9 +17,9 @@ public class Player : MonoBehaviour
 
     private void Start() {
 
+        playerBody = GetComponent<Rigidbody2D>();
         healthBar.setSize(1f);
         isGrounded = true;
-        playerBody = GetComponent<Rigidbody2D>();
         // animator = GetComponent<Animator>();
     }
 
@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
 
     public void die()
     {
-        
+        // LvlManager.instance.gameOver();
         // gameObject.SetActive(false);
     }
 
