@@ -36,6 +36,7 @@ public class EnemyShooting : MonoBehaviour
             // timer goes up in seconds
             timer += Time.deltaTime;
 
+            // if timer is more than 2 seconds then timer will reet to 0
             if(timer > 2 )
             {
             timer = 0;
@@ -43,7 +44,7 @@ public class EnemyShooting : MonoBehaviour
             }
         }
 
-        // if timer is more than 2 seconds then timer will reet to 0
+        
         
     }
 

@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     [SerializeField]public float jumpSpeed = 10f;
     
-   
+
 
     private void Start() {
 
