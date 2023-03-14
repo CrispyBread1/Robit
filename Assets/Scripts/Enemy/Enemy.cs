@@ -49,6 +49,11 @@ public class Enemy : MonoBehaviour
         // Move the enemy towards the player using the movement vector
         transform.position += (Vector3)movement;
         }
+    }
+
+    public void Shoot(){
+        
+    }
 
 
     }
