@@ -1,0 +1,2335 @@
+fileFormatVersion: 2
+guid: 98c81da8550cc4f5c94c0c73cf8b600d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 996
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b1841701f2f4c9192edac7e0e4b429
+      internalID: 1638972900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 996
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5773d37e5c9404f448ecbbee20d58597
+      internalID: 725143330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 996
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fe93b62b6a144b3adc2c13aeb37cfa
+      internalID: -883328631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 996
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a0c282edca845d7af1daf62521ecd1
+      internalID: 141543401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 996
+        width: 110
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f356669641e14d91a3bdd0d5cd560e7
+      internalID: -900477785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 991
+        width: 113
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7696fc2ecdf4579bd228cc8e93bcbe
+      internalID: -520085757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 991
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebd61238a0d94601a281d82bf248b7b
+      internalID: 514752933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 990
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c94e1c86c9b140bc90f2214af75431e
+      internalID: 2077834832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 932
+        width: 181
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e84802dcf0b453fb51b0a778447e4d
+      internalID: -1352379470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 932
+        width: 177
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ec9b2a8419d47dabfeeffdf4ce255b
+      internalID: -921990059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 933
+        width: 135
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4948c13113e794a49baaf6e1869d5f72
+      internalID: 711976960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 932
+        width: 146
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff99905fd543420286089e9d05b5d67
+      internalID: 1872292602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 932
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffb801296f2c4a828d94d5b11aa6687
+      internalID: -1308690235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 932
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196eb42cdbb6f49ea959e6ae8b094b73
+      internalID: -180695670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 931
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e416017ba3246068b0690530d8c2d1
+      internalID: -1990174343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 932
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700a9b11b0ac74e6cbd9389f15273cb1
+      internalID: 1214874989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 932
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0881f7d2b401c4240ba4a2920147aec3
+      internalID: 1291805411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 932
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66d5546361524eb2a9c08f85a5a9ca9
+      internalID: 542150674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 932
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5852a01bde3409f9bd4ecd2843aeb6
+      internalID: 275742902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 932
+        width: 132
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127d16d7d879e4d54b3bc17beb5a4c17
+      internalID: 2129399354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 932
+        width: 84
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83ec3e3f0bdd438eb1f0f4267292348
+      internalID: -775916707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 932
+        width: 74
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70476d7839e094804ae42cba67890f49
+      internalID: -1923774486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 820
+        width: 121
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc403f97b86714600bc55bd83f44eddb
+      internalID: 812436487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 821
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2553dcfd8be894e3ea4277f2190e3cc5
+      internalID: -785216667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 821
+        width: 37
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f937e6ce3fa4747a7ba213f8d40fa3a3
+      internalID: 2090956710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 821
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e6c095e205f4dcfa90d9b7d8cd82c5
+      internalID: 230649097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 821
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ee499c3c4df4c25b982af5bff34aa2
+      internalID: -931299381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 821
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff2240e7f034b9fb7b4b357976eb89
+      internalID: 646626503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 821
+        width: 92
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f773ed187f35742238ab2b31a990b524
+      internalID: 16484945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 821
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf9b9940c97745c6bd4728d22c17a3a
+      internalID: -276386193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 821
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713a3b75224734a40b1e02edc32e1822
+      internalID: -21212483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 821
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a7a95a71e5b4106b1a1e032a7d205a
+      internalID: -918200446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 829
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85c5f2b9854d4d37b1a7ffc5dcbb09e
+      internalID: 1689541028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 821
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02e7d64c03e046419423766065e918f
+      internalID: 401060251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 821
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4762411e321074e6e888ac1d5ff5867f
+      internalID: -1617161372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 821
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a5c2744499b425292850b584cbac39
+      internalID: 1996545264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 820
+        width: 42
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0177cfe160a5d4ab3bf316f086b65791
+      internalID: -2131409055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 821
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f04d13315ec5480b867b7980ed611cf
+      internalID: 654549285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 821
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830554e002d0c4fbcbf29151705ff699
+      internalID: -653032749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 820
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e088a4988940f403e85dac44c6807ef2
+      internalID: 1298676628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 601
+        width: 158
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de187dc38e1dd47cbb54dda564919ac4
+      internalID: -2017131368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 685
+        width: 84
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42e83ae414704429992a2a9b00c3e24
+      internalID: 482992396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 686
+        width: 75
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a059991413a2d4e8e910c1fa2776ed39
+      internalID: 1284230279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 685
+        width: 181
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a1b4eaf43f84792af3fc0eb965c6b7
+      internalID: -1748304152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 686
+        width: 178
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95de4d79baddf486cb843639d8dcb88f
+      internalID: 1521270511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 686
+        width: 135
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60be8e9df23cf41b49bb9c9a6267c5a6
+      internalID: 1460448771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 686
+        width: 163
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba73d847d53f141f1a6e4afbc49bea77
+      internalID: -770721885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 536
+        width: 69
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0014c6fb239bf439680588031d3b1add
+      internalID: -1249326003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 616
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e1aae7d2e2c41e8a31cdb3b2358038
+      internalID: 95174537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 616
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8000b8b366ac3496bb702f6fcde87038
+      internalID: -1827182859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 616
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaddb9aec0b74f459aff3eecdcec0bf
+      internalID: 58428164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 616
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a682d6dae9394eceb724bee1051b7b6
+      internalID: -400093865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 536
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978c591d055e647c79adc0b996d39d2b
+      internalID: -2103171001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 536
+        width: 69
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4e7fcabc9e048618cd72d87be4f918
+      internalID: -544664630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 616
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f0b7d8657924b9d99eca72bbd04345
+      internalID: -1348638982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 616
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f386a59ea4194a5d8a9f9d4165c6803
+      internalID: 1782405917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 616
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe69bbc65c104856ae4710576bb523f
+      internalID: -51217988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 616
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1fa750ecfe74403a085aeda06f3c9c
+      internalID: -1594337304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 536
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713487bf6c6e341d39dfa528a0c97698
+      internalID: 103545560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 536
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184a9fc8e344a40ebac739b255445692
+      internalID: -1515624743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 536
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976cb03e04e1f45c881946c1f8383982
+      internalID: 2140723866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 536
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b077b6eae197c4f3cb47ab0d370379cc
+      internalID: -1722486882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 539
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942f89e8c126f41c7bc928232c5d7823
+      internalID: -65701512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 537
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3eb8102a4b114a20ad375f4e3b63353
+      internalID: -936129003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 537
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a68644eada9a465bab8a96e2667e065
+      internalID: 1100105638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 536
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5a3c974f38b436994130d8a1092862
+      internalID: -788429695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 535
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8f87b4df37f48b49a55c3aad489161
+      internalID: 121321402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 421
+        width: 117
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc849847c9cd54d978abe316720e2e9e
+      internalID: -1403876036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 421
+        width: 123
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b191b7a1dd849cf82ecf8609361255
+      internalID: 324325294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 421
+        width: 139
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f72673dd999f495784e6fd09a67bbfb
+      internalID: 848434005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 421
+        width: 123
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd358c0ad74ac430893cc0203bd34d5a
+      internalID: 1756506226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 421
+        width: 115
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c9491679bf54d25930c31fbd13d2b6
+      internalID: 1680693819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 421
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddd9a53eb8324e0590533182ee6424a
+      internalID: 580493590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 421
+        width: 58
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee659dfae6c0844ddb9ef104b5d0add5
+      internalID: 1509305018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 422
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806b04862d9b44d90b285a63c112584c
+      internalID: 449690822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 421
+        width: 157
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7371c4eddc7fd4711856fd756407c8fb
+      internalID: 973069765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 421
+        width: 76
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ac431979600418fb4d92b35b982771
+      internalID: -1155988249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 287
+        width: 221
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9846b632d1d48f9b4e42fe7eb3ad54
+      internalID: -1256825725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 287
+        width: 137
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdffb886cb924958a5e3d73c0108cf2
+      internalID: -967020334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 287
+        width: 128
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e5c12e79baf4206ba5e30c722ea035
+      internalID: -1938171203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 287
+        width: 140
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e487cf572b9b42d6943ecc202154237
+      internalID: -1749732825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 287
+        width: 141
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc802829a6544b64b5eb875c32dcb1f
+      internalID: -126129299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 287
+        width: 114
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a56c6fa854044dbd9fb050d2f3888cb
+      internalID: 151920874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 287
+        width: 130
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dc9d9ce12e64f40b177af051c2b21c
+      internalID: -1662939441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 151
+        width: 122
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4c26864d0ff4bce982cb89e88fcb7e
+      internalID: -774018303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 151
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd9cc4badef54d0ba32ceb1064ee8cf
+      internalID: 1983773609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 151
+        width: 154
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65f2bc3c98d541099d5935b05f63688
+      internalID: -1088553099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 150
+        width: 127
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94e2a6c0044148489c0f28663373a10
+      internalID: -692895000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 154
+        width: 116
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73001ba02a7c43f58f69719a48f470c
+      internalID: 1469425748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 154
+        width: 82
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269abe1c3d3994470865f013c7ec133a
+      internalID: -1312179475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 151
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae9b0b25bbaf4fdf9916729bcebf4a5
+      internalID: 311703549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 151
+        width: 56
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bacac58f5314335bbaa989f9cfa1e2
+      internalID: 510555859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 18
+        width: 157
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cf4e582f14f4376ad702ded8ad5156
+      internalID: 148550915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 19
+        width: 78
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfa376a4abfd4709bbeaf6cf21e90fc
+      internalID: -1101566937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 18
+        width: 223
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a1055013aec40fab57958316fddbc1
+      internalID: 107878355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 18
+        width: 206
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0918150e510e347059cb8fce3645d28e
+      internalID: 1466609895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 16
+        width: 87
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71090d32abbbb4a67b28898dfdc4cab0
+      internalID: -1153866179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 15
+        width: 104
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cb2f8988e80472c946ded680ff0990
+      internalID: 1521008032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 27
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec2db3dc1c25458c8f039c7b3e76d99
+      internalID: -333634000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fullrockformationsspritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 0
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac15670307aa4adca3ff15fe8de64a9
+      internalID: 1695346657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fullrockformationsspritesheet_0: 1638972900
+      fullrockformationsspritesheet_1: 725143330
+      fullrockformationsspritesheet_10: 711976960
+      fullrockformationsspritesheet_11: 1872292602
+      fullrockformationsspritesheet_12: -1308690235
+      fullrockformationsspritesheet_13: -180695670
+      fullrockformationsspritesheet_14: -1990174343
+      fullrockformationsspritesheet_15: 1214874989
+      fullrockformationsspritesheet_16: 1291805411
+      fullrockformationsspritesheet_17: 542150674
+      fullrockformationsspritesheet_18: 275742902
+      fullrockformationsspritesheet_19: 2129399354
+      fullrockformationsspritesheet_2: -883328631
+      fullrockformationsspritesheet_20: -775916707
+      fullrockformationsspritesheet_21: -1923774486
+      fullrockformationsspritesheet_22: 812436487
+      fullrockformationsspritesheet_23: -785216667
+      fullrockformationsspritesheet_24: 2090956710
+      fullrockformationsspritesheet_25: 230649097
+      fullrockformationsspritesheet_26: -931299381
+      fullrockformationsspritesheet_27: 646626503
+      fullrockformationsspritesheet_28: 16484945
+      fullrockformationsspritesheet_29: -276386193
+      fullrockformationsspritesheet_3: 141543401
+      fullrockformationsspritesheet_30: -21212483
+      fullrockformationsspritesheet_31: -918200446
+      fullrockformationsspritesheet_32: 1689541028
+      fullrockformationsspritesheet_33: 401060251
+      fullrockformationsspritesheet_34: -1617161372
+      fullrockformationsspritesheet_35: 1996545264
+      fullrockformationsspritesheet_36: -2131409055
+      fullrockformationsspritesheet_37: 654549285
+      fullrockformationsspritesheet_38: -653032749
+      fullrockformationsspritesheet_39: 1298676628
+      fullrockformationsspritesheet_4: -900477785
+      fullrockformationsspritesheet_40: -2017131368
+      fullrockformationsspritesheet_41: 482992396
+      fullrockformationsspritesheet_42: 1284230279
+      fullrockformationsspritesheet_43: -1748304152
+      fullrockformationsspritesheet_44: 1521270511
+      fullrockformationsspritesheet_45: 1460448771
+      fullrockformationsspritesheet_46: -770721885
+      fullrockformationsspritesheet_47: -1249326003
+      fullrockformationsspritesheet_48: 95174537
+      fullrockformationsspritesheet_49: -1827182859
+      fullrockformationsspritesheet_5: -520085757
+      fullrockformationsspritesheet_50: 58428164
+      fullrockformationsspritesheet_51: -400093865
+      fullrockformationsspritesheet_52: -2103171001
+      fullrockformationsspritesheet_53: -544664630
+      fullrockformationsspritesheet_54: -1348638982
+      fullrockformationsspritesheet_55: 1782405917
+      fullrockformationsspritesheet_56: -51217988
+      fullrockformationsspritesheet_57: -1594337304
+      fullrockformationsspritesheet_58: 103545560
+      fullrockformationsspritesheet_59: -1515624743
+      fullrockformationsspritesheet_6: 514752933
+      fullrockformationsspritesheet_60: 2140723866
+      fullrockformationsspritesheet_61: -1722486882
+      fullrockformationsspritesheet_62: -65701512
+      fullrockformationsspritesheet_63: -936129003
+      fullrockformationsspritesheet_64: 1100105638
+      fullrockformationsspritesheet_65: -788429695
+      fullrockformationsspritesheet_66: 121321402
+      fullrockformationsspritesheet_67: -1403876036
+      fullrockformationsspritesheet_68: 324325294
+      fullrockformationsspritesheet_69: 848434005
+      fullrockformationsspritesheet_7: 2077834832
+      fullrockformationsspritesheet_70: 1756506226
+      fullrockformationsspritesheet_71: 1680693819
+      fullrockformationsspritesheet_72: 580493590
+      fullrockformationsspritesheet_73: 1509305018
+      fullrockformationsspritesheet_74: 449690822
+      fullrockformationsspritesheet_75: 973069765
+      fullrockformationsspritesheet_76: -1155988249
+      fullrockformationsspritesheet_77: -1256825725
+      fullrockformationsspritesheet_78: -967020334
+      fullrockformationsspritesheet_79: -1938171203
+      fullrockformationsspritesheet_8: -1352379470
+      fullrockformationsspritesheet_80: -1749732825
+      fullrockformationsspritesheet_81: -126129299
+      fullrockformationsspritesheet_82: 151920874
+      fullrockformationsspritesheet_83: -1662939441
+      fullrockformationsspritesheet_84: -774018303
+      fullrockformationsspritesheet_85: 1983773609
+      fullrockformationsspritesheet_86: -1088553099
+      fullrockformationsspritesheet_87: -692895000
+      fullrockformationsspritesheet_88: 1469425748
+      fullrockformationsspritesheet_89: -1312179475
+      fullrockformationsspritesheet_9: -921990059
+      fullrockformationsspritesheet_90: 311703549
+      fullrockformationsspritesheet_91: 510555859
+      fullrockformationsspritesheet_92: 148550915
+      fullrockformationsspritesheet_93: -1101566937
+      fullrockformationsspritesheet_94: 107878355
+      fullrockformationsspritesheet_95: 1466609895
+      fullrockformationsspritesheet_96: -1153866179
+      fullrockformationsspritesheet_97: 1521008032
+      fullrockformationsspritesheet_98: -333634000
+      fullrockformationsspritesheet_99: 1695346657
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
