@@ -10,13 +10,14 @@ public class Player : MonoBehaviour
     // private bool isJumping;
     // [SerializeField]private float jump;
     private bool isGrounded;
-    [SerializeField]public float jumpSpeed = 10f;
+    [SerializeField]private float jumpSpeed = 10f;
+    [SerializeField]private Health_Bar healthBar;
     
    
 
     private void Start() {
 
-        
+        healthBar.setSize(1f);
         isGrounded = true;
         playerBody = GetComponent<Rigidbody2D>();
         // animator = GetComponent<Animator>();
