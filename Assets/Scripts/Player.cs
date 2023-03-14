@@ -44,6 +44,12 @@ public class Player : MonoBehaviour
                     isGrounded = false;
             }
 
+    // when player runs out of health / dies
+        if(healthBar.getHealth() == 0f)
+        {
+            die();
+        }
+
 
     // Animation -
         // set animator to true or false
@@ -58,21 +64,24 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.tag == "Floor" && isGrounded == false)
         {
-            // Debug.Log("am inside the on colllision");
             isGrounded = true;
+        }
+
+    // if collided with enemy pass through a certain value to take health down by
+        if (other.gameObject.tag == "EnemyHit")
+        {
+            if(healthBar.getHealth() != 0f)
+            {
+                healthBar.getHit(0.25f);
+            }
+            
         }
     }
 
+    public void die()
+    {
+        
+    }
 
-    // public void OnCollisionEnter(Collision collision)
-    // {
-    //     isGrounded = true;
-    //     Debug.Log("i have collided with ground");
-    // }
-
-    // public void OnCollisionExit(Collision collision)
-    // {
-    //     isGrounded = false;
-    // }
 
 }
