@@ -9,6 +9,8 @@ public class Health_Bar : MonoBehaviour
     private Player player;
     private Level1Manager level1Manager;
     public GameObject DeathScreen;
+    [SerializeField] private DeathScreenManager deathScreenManager;
+
     // private bool playerDead = false;
 
     // Start is called before the first frame update
@@ -53,6 +55,11 @@ public class Health_Bar : MonoBehaviour
             // player.die();
             // level1Manager.GameOver();
         }
+        if (health <= 0)
+        {
+            deathScreenManager.ShowDeathScreen();
+        }
+
     }
 
     public void setDeathScreen(bool active)
