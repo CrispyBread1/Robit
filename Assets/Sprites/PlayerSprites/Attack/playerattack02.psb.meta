@@ -95,8 +95,8 @@ ScriptedImporter:
   rigSpriteImportData:
   - name: attack)7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.14077652, y: 0.09321058}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -104,7 +104,7 @@ ScriptedImporter:
       y: 178
       width: 39
       height: 37
-    spriteID: 37b7882e9059a48c193ef4ce05837003
+    spriteID: fe8d7cb1191274bd288c9148a8d83a03
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,11 +114,11 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 178}
-    spritePosition: {x: 21, y: 15}
+    spritePosition: {x: 17, y: 22}
   - name: attack06
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.24346869, y: 0.0687481}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -126,7 +126,7 @@ ScriptedImporter:
       y: 4
       width: 47
       height: 36
-    spriteID: a9d8dc408064046029e592dedfe8b5e4
+    spriteID: f47209d93829f4c5f93ded1e8fc67467
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,8 +139,8 @@ ScriptedImporter:
     spritePosition: {x: 11, y: 23}
   - name: attack05
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.38366184, y: 0.014108931}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -148,7 +148,7 @@ ScriptedImporter:
       y: 92
       width: 43
       height: 35
-    spriteID: 382838502ccee4d338425bedde8f561f
+    spriteID: e8b71f5efe978461cba06526df05654d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,8 +161,8 @@ ScriptedImporter:
     spritePosition: {x: 6, y: 25}
   - name: attack04
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.4363047, y: 0.013453021}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 135
       width: 42
       height: 35
-    spriteID: b5425252bfb0846d7a5e14deab46efc6
+    spriteID: 6da6b80f5f8994c2ab01bb380b703b10
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -183,8 +183,8 @@ ScriptedImporter:
     spritePosition: {x: 4, y: 25}
   - name: attack03
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.46611744, y: 0.015240669}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 48
       width: 42
       height: 36
-    spriteID: 7b10d104b0f964b9aaa97d47965a35a0
+    spriteID: 27c914675de624c88966522b5a2562c5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -205,8 +205,8 @@ ScriptedImporter:
     spritePosition: {x: 3, y: 25}
   - name: attack02
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.49796414, y: 0.013905419}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -214,7 +214,7 @@ ScriptedImporter:
       y: 49
       width: 19
       height: 36
-    spriteID: ac391af0c8d7b48c1ab31a9e83090690
+    spriteID: cfdbe070a402846629a735732065f2e8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -227,8 +227,8 @@ ScriptedImporter:
     spritePosition: {x: 13, y: 25}
   - name: attack01
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.49632826, y: 0.013802155}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -236,7 +236,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 37
-    spriteID: bbd2f6b5094be4abd916ef8d32e362b6
+    spriteID: 85382bfd3e87f46d7a18bd0e1ee49865
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -307,8 +307,8 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
   characterMode: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 7
+  documentPivot: {x: 5, y: 0}
+  documentAlignment: 9
   importHiddenLayers: 0
   layerMappingOption: 2
   generatePhysicsShape: 0
@@ -325,7 +325,7 @@ ScriptedImporter:
     spriteName: attack)7
     isGroup: 0
     parentIndex: -1
-    spriteID: 37b7882e9059a48c193ef4ce05837003
+    spriteID: fe8d7cb1191274bd288c9148a8d83a03
     layerID: 29
     mosaicPosition: {x: 4, y: 178}
     flatten: 0
@@ -335,7 +335,7 @@ ScriptedImporter:
     spriteName: attack06
     isGroup: 0
     parentIndex: -1
-    spriteID: a9d8dc408064046029e592dedfe8b5e4
+    spriteID: f47209d93829f4c5f93ded1e8fc67467
     layerID: 22
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -345,7 +345,7 @@ ScriptedImporter:
     spriteName: attack05
     isGroup: 0
     parentIndex: -1
-    spriteID: 382838502ccee4d338425bedde8f561f
+    spriteID: e8b71f5efe978461cba06526df05654d
     layerID: 19
     mosaicPosition: {x: 4, y: 92}
     flatten: 0
@@ -355,7 +355,7 @@ ScriptedImporter:
     spriteName: attack04
     isGroup: 0
     parentIndex: -1
-    spriteID: b5425252bfb0846d7a5e14deab46efc6
+    spriteID: 6da6b80f5f8994c2ab01bb380b703b10
     layerID: 16
     mosaicPosition: {x: 4, y: 135}
     flatten: 0
@@ -365,7 +365,7 @@ ScriptedImporter:
     spriteName: attack03
     isGroup: 0
     parentIndex: -1
-    spriteID: 7b10d104b0f964b9aaa97d47965a35a0
+    spriteID: 27c914675de624c88966522b5a2562c5
     layerID: 13
     mosaicPosition: {x: 4, y: 48}
     flatten: 0
@@ -375,7 +375,7 @@ ScriptedImporter:
     spriteName: attack02
     isGroup: 0
     parentIndex: -1
-    spriteID: ac391af0c8d7b48c1ab31a9e83090690
+    spriteID: cfdbe070a402846629a735732065f2e8
     layerID: 10
     mosaicPosition: {x: 59, y: 49}
     flatten: 0
@@ -385,7 +385,7 @@ ScriptedImporter:
     spriteName: attack01
     isGroup: 0
     parentIndex: -1
-    spriteID: bbd2f6b5094be4abd916ef8d32e362b6
+    spriteID: 85382bfd3e87f46d7a18bd0e1ee49865
     layerID: 6
     mosaicPosition: {x: 59, y: 4}
     flatten: 0
