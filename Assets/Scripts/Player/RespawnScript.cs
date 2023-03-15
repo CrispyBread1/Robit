@@ -6,12 +6,12 @@ public class RespawnScript : MonoBehaviour
 {
 
     private Transform currentCheckpoint;
-    private Health_Bar healthBar;
+    private playerHealth healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
-        healthBar = GetComponent<Health_Bar>();
+        healthBar = GetComponent<playerHealth>();
     }
 
     // Update is called once per frame
