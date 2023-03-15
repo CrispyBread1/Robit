@@ -11,7 +11,8 @@ public class EnemyBulletScript : MonoBehaviour
     // rb = the bullet
     private Rigidbody2D rb;
     public float force;
-    private float timer;
+    public float timer;
+    
 
 
 
@@ -25,6 +26,8 @@ public class EnemyBulletScript : MonoBehaviour
         //used to give the coordinates of the player
         player = GameObject.FindGameObjectWithTag("Player");
 
+        
+
         // used to find the position of the player
         Vector2 direction = player.transform.position - transform.position;
         // this gives the bullet (rb) behaviour 
@@ -34,11 +37,14 @@ public class EnemyBulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer = Time.deltaTime;
+        timer += Time.deltaTime;
+        // Debug.Log(timer);
 
-        {
+        if(timer > 5){
             Destroy(gameObject);
         }
+            
+        
     }
 
     //when bullet hits player

@@ -9,7 +9,7 @@ public class EnemyShooting : MonoBehaviour
 
     public GameObject bullet;
     public Transform bulletPosition;
-    private float timer;
+    public float timer;
     public float distance;
     private GameObject player;
 
@@ -19,6 +19,7 @@ public class EnemyShooting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // finding player potsition
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
