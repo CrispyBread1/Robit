@@ -23,23 +23,25 @@ public class EnemyBulletScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //used to give the coordinates of the player
+//used to give the coordinates of the player
         player = GameObject.FindGameObjectWithTag("Player");
 
         
 
-        // used to find the position of the player
+// used to find the position of the player
         Vector2 direction = player.transform.position - transform.position;
-        // this gives the bullet (rb) behaviour 
+// this gives the bullet (rb) behaviour 
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
     }
 
     // Update is called once per frame
     void Update()
     {
+// timer doesnt count by itself, It counts the frames and convertis into time. Thats why we += 
+// This is the bullets own timer
         timer += Time.deltaTime;
-        // Debug.Log(timer);
-
+       
+// If timer is at a certain time it breaks.
         if(timer > 5){
             Destroy(gameObject);
         }
@@ -47,12 +49,13 @@ public class EnemyBulletScript : MonoBehaviour
         
     }
 
-    //when bullet hits player
+// when bullet hits player
     public void OnBulletHitPlayer(Collider2D hit)
     {
         if(hit.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
+            
         }
     }
 }

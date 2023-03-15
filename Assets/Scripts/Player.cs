@@ -70,11 +70,23 @@ public class Player : MonoBehaviour
     // if collided with enemy pass through a certain value to take health down by
         if (other.gameObject.tag == "EnemyHit")
         {
-            if(healthBar.getHealth() != 0f)
-            {
-                healthBar.getHit(0.25f);
-            }
-            
+           takeDamage("Melee");
+        }
+    }
+
+    public void takeDamage(string damageType)
+    {
+        if(healthBar.getHealth() <= 0)
+        {
+            die();
+        } 
+        else if (damageType == "Melee")
+        {
+            healthBar.getHit(0.25f);
+        }
+        else if (damageType == "Bullet")
+        {
+            healthBar.getHit(0.20f);
         }
     }
 
