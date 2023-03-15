@@ -73,4 +73,8 @@ The timeline for the project will be approximately 12 days. The planning phase w
 BUGS/ERRORS/ISSUES FOUND WHILE BUILDING.
 
 1.Enemy has developed a bug where it doesnt follow on the right hand side but it does on the left.
+- Chase distance rectified (chase distance was 0 so it wouldnt chase the player until the distance was changed.)
 2.Enemy has decided to stop shooting.
+- Trigger was ticked 
+- object was deleting instanctly (needed and if statement added back in).
+- bullets werent deleting as functoin name has to be "OnCollisionEnter2D" for collioson functions.

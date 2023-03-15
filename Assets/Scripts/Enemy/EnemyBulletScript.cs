@@ -41,7 +41,7 @@ public class EnemyBulletScript : MonoBehaviour
 // timer doesnt count by itself, It counts the frames and convertis into time. Thats why we += 
 // This is the bullets own timer
         timer += Time.deltaTime;
-       
+
 // If timer is at a certain time it breaks.
         if(timer > 5){
             Destroy(gameObject);
