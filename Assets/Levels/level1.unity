@@ -373,6 +373,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2920b58e50b0146bb9c8f17c4b93800c, type: 3}
+--- !u!1 &339903437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339903438}
+  m_Layer: 0
+  m_Name: ShootingPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339903438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339903437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1220946255}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &353289221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1455,7 @@ GameObject:
   - component: {fileID: 1220946254}
   - component: {fileID: 1220946256}
   - component: {fileID: 1220946257}
+  - component: {fileID: 1220946258}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: EnemyHit
@@ -1494,6 +1526,8 @@ Transform:
   m_LocalPosition: {x: -3.91, y: -3.13, z: -0.5}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 339903438}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1511,6 +1545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1559127988}
   speed: 1
+  distanceChase: 0
 --- !u!61 &1220946257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1537,6 +1572,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7810802, y: 4.9801455}
   m_EdgeRadius: 0
+--- !u!114 &1220946258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220946253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afff6f6350938495db21a35ec246e35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 253423992798140515, guid: 06551fc08fda445a8b0455856cad4cde, type: 3}
+  bulletPosition: {fileID: 339903438}
+  distance: 5
 --- !u!1001 &1308214829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1667,7 +1717,7 @@ GameObject:
   - component: {fileID: 1559127995}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2389,8 +2439,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d047485cf9d8f4420b8b3f3eb4129361, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2100613907
 GameObject:
   m_ObjectHideFlags: 0
