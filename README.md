@@ -66,3 +66,11 @@ The game will be developed using the Unity game engine, using C# as the primary 
 
 Timeline:
 The timeline for the project will be approximately 12 days. The planning phase will take up the first day, where the team will brainstorm ideas for the game's mechanics, story, and art style. The development phase will take up the next nine days, where the team will work on developing the game mechanics and programming the game's functionality. The final two days will be dedicated to testing and polishing the game, as well as preparing for a final presentation.
+
+
+
+
+BUGS/ERRORS/ISSUES FOUND WHILE BUILDING.
+
+1.Enemy has developed a bug where it doesnt follow on the right hand side but it does on the left.
+2.Enemy has decided to stop shooting.
