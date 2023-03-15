@@ -51,13 +51,14 @@ public class EnemyBulletScript : MonoBehaviour
     }
 
 // when bullet hits player
-    public void OnBulletHitPlayer(Collider2D hit)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(hit.gameObject.CompareTag("Player"))
+
+        if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("I HIT SOMETHINFG");
             Destroy(gameObject);
 
         }
     }
+    
 }

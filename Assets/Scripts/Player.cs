@@ -73,6 +73,11 @@ public class Player : MonoBehaviour
         {
            takeDamage("Melee");
         }
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            takeDamage("Bullet");
+        }
     }
 
     public void takeDamage(string damageType)
