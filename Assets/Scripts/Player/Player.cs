@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
     // [SerializeField]private float jump;
     private bool isGrounded;
     [SerializeField]private float jumpSpeed = 10f;
-    [SerializeField]private Health_Bar healthBar;
     private Level1Manager levelManager;
     private RespawnScript respawnScript;
     
@@ -21,7 +20,6 @@ public class Player : MonoBehaviour
 
         respawnScript = GetComponent<RespawnScript>();
         playerBody = GetComponent<Rigidbody2D>();
-        healthBar.setSize(1f);
         isGrounded = true;
         // animator = GetComponent<Animator>();
     }
@@ -46,9 +44,6 @@ public class Player : MonoBehaviour
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
                     isGrounded = false;
             }
-
-
-
     // Animation -
         // set animator to true or false
         // run name is equal to animation parameter in animation window
@@ -66,41 +61,7 @@ public class Player : MonoBehaviour
         }
 
     // if collided with enemy pass through a certain value to take health down by
-        if (collision.gameObject.tag == "EnemyHit")
-        {
-           takeDamage("Melee");
-        }
-
-        if (collision.gameObject.tag == "Bullet")
-        {
-            takeDamage("Bullet");
-        }
+       
     }
-
-    public void takeDamage(string damageType)
-    {
-        if(healthBar.getHealth() <= 0)
-        {
-            // die();
-            Debug.Log("I died");
-        } 
-        else if (damageType == "Melee")
-        {
-            healthBar.getHit(0.25f);
-        }
-        else if (damageType == "Bullet")
-        {
-            healthBar.getHit(0.20f);
-        }
-    }
-
-    public void die()
-    {
-        Destroy(gameObject);
-        
-        // LvlManager.instance.gameOver();
-        // gameObject.SetActive(false);
-    }
-
 
 }

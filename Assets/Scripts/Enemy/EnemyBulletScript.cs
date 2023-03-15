@@ -13,13 +13,7 @@ public class EnemyBulletScript : MonoBehaviour
     public float force;
     public float timer;
     
-
-
-
-
-
-
-    // Start is called before the first frame update
+// Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
