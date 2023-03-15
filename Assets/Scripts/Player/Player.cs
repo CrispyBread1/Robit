@@ -12,12 +12,14 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     [SerializeField]private float jumpSpeed = 10f;
     [SerializeField]private Health_Bar healthBar;
+    private Level1Manager levelManager;
+    private RespawnScript respawnScript;
     
 
 
     private void Start() {
 
-
+        respawnScript = GetComponent<RespawnScript>();
         playerBody = GetComponent<Rigidbody2D>();
         healthBar.setSize(1f);
         isGrounded = true;
@@ -45,11 +47,6 @@ public class Player : MonoBehaviour
                     isGrounded = false;
             }
 
-    // when player runs out of health / dies
-        if(healthBar.getHealth() == 0f)
-        {
-            die();
-        }
 
 
     // Animation -
@@ -84,7 +81,8 @@ public class Player : MonoBehaviour
     {
         if(healthBar.getHealth() <= 0)
         {
-            die();
+            // die();
+            Debug.Log("I died");
         } 
         else if (damageType == "Melee")
         {
@@ -98,6 +96,8 @@ public class Player : MonoBehaviour
 
     public void die()
     {
+        Destroy(gameObject);
+        
         // LvlManager.instance.gameOver();
         // gameObject.SetActive(false);
     }
