@@ -23,6 +23,7 @@ public class EnemyBulletScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameObject.tag = "Bullet";
 //used to give the coordinates of the player
         player = GameObject.FindGameObjectWithTag("Player");
 
@@ -54,8 +55,9 @@ public class EnemyBulletScript : MonoBehaviour
     {
         if(hit.gameObject.CompareTag("Player"))
         {
+            Debug.Log("I HIT SOMETHINFG");
             Destroy(gameObject);
-            
+
         }
     }
 }

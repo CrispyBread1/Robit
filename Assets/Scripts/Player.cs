@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 
     private void Start() {
 
+
         playerBody = GetComponent<Rigidbody2D>();
         healthBar.setSize(1f);
         isGrounded = true;
@@ -58,17 +59,17 @@ public class Player : MonoBehaviour
         // animator.SetBool("run", HorizontalInput !=0);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         // Debug.Log("am inside the on colllision");
 
-        if (other.gameObject.tag == "Floor" && isGrounded == false)
+        if (collision.gameObject.tag == "Floor" && isGrounded == false)
         {
             isGrounded = true;
         }
 
     // if collided with enemy pass through a certain value to take health down by
-        if (other.gameObject.tag == "EnemyHit")
+        if (collision.gameObject.tag == "EnemyHit")
         {
            takeDamage("Melee");
         }
