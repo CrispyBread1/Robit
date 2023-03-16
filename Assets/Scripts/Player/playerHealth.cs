@@ -11,6 +11,11 @@ public class playerHealth : MonoBehaviour
     private Player player;
     private Level1Manager level1Manager;
     public GameObject DeathScreen;
+    public bool isAttacking;
+
+
+
+
 
     // Start is called before the first frame update
     private void Start()
@@ -50,6 +55,10 @@ public class playerHealth : MonoBehaviour
         {
             takeDamage("Bullet");
         }
+    }
+
+    private void IsAttacking(){
+        isAttacking = true;
     }
 
     
