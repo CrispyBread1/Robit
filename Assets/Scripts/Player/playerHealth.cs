@@ -19,11 +19,13 @@ public class playerHealth : MonoBehaviour
     }
 
     public void update()
-    {
+    {   
+// this ensures the gealth bar stays between 0 - 1, if the health is less than zero is sets it to zero and if its more than one it sets it to one.
         healthbar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1);
     }
-     public void takeDamage(string damageType)
-    {   
+    public void takeDamage(string damageType)
+    {  
+
         if(health <= 0){
             DeathScreen.SetActive(true);
         }
@@ -39,9 +41,9 @@ public class playerHealth : MonoBehaviour
         }
     }
     private void OnCollisionEnter2D(Collision2D collision){
-         if (collision.gameObject.CompareTag("EnemyHit"))
+        if (collision.gameObject.CompareTag("EnemyHit"))
         {
-           takeDamage("Melee");
+            takeDamage("Melee");
         }
 
         if (collision.gameObject.CompareTag("Bullet"))
