@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField]private float jumpSpeed = 10f;
     private Level1Manager levelManager;
     private RespawnScript respawnScript;
-
+    private Animator animator;
 
     
 
@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         respawnScript = GetComponent<RespawnScript>();
         playerBody = GetComponent<Rigidbody2D>();
         isGrounded = true;
-        // animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update() {
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         // set animator to true or false
         // run name is equal to animation parameter in animation window
         // horizontal is 0 (false) = idle animation
-        // animator.SetBool("run", HorizontalInput !=0);
+        animator.SetBool("run", HorizontalInput !=0);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
