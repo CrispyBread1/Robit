@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField]private float speed;
     private Rigidbody2D playerBody;
-    // private Animator animator;
+    public Animator animator;
     // private bool isJumping;
     // [SerializeField]private float jump;
     private bool isGrounded;
@@ -44,6 +44,11 @@ public class Player : MonoBehaviour
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
                     isGrounded = false;
             }
+
+        if (Input.GetKey(KeyCode.J))
+        {   
+            Attack();
+        }
     // Animation -
         // set animator to true or false
         // run name is equal to animation parameter in animation window
@@ -61,7 +66,17 @@ public class Player : MonoBehaviour
         }
 
     // if collided with enemy pass through a certain value to take health down by
-       
+    }
+
+    private void Attack()
+    {
+        //Play an attack animation
+        animator.SetTrigger("Attack");
+        //detect enemies in range of attack
+
+        //damage them
+
+
     }
 
 }
