@@ -13,13 +13,13 @@ public class PlayerCombat : MonoBehaviour
 
 
     
-    // Start is called before the first frame update
+// Start is called before the first frame update
     void Start()
     {
-        // attackPoint
+       
     }
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
@@ -30,13 +30,7 @@ public class PlayerCombat : MonoBehaviour
 
             
         }
-        // if (animator.isActiveAndEnabled){
-        //     Debug.Log("activated");
         
-        // } else if(animator.isActiveAndEnabled == false)
-        // {
-        //     Debug.Log("deactivated");
-        // }
     }
 
     private void Attack()
@@ -47,19 +41,16 @@ public class PlayerCombat : MonoBehaviour
             animator.SetTrigger("attack");
             canAttack = false;
             
-            //damage them
+// detect enemies in range of attack
+// this adda an invisible sphere around our attack point and it will give it a range we decide             
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+            
             foreach (Collider2D enemy in hitEnemies)
+//damage them
             {
             Debug.Log("enemy hit");
             }
         }
-//detect enemies in range of attack
-// this adda an invisible sphere around our attack point and it will give it a range we decide 
-                    
-
-        
-
     }
 
 
