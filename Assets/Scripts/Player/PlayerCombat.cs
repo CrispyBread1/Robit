@@ -8,7 +8,7 @@ public class PlayerCombat : MonoBehaviour
     public Animator animator;
     public Transform attackPoint;
     public float attackRange = 0.5f;
-    public bool canAttack;
+    private bool canAttack;
     public LayerMask enemyLayers;
 
     
@@ -36,10 +36,17 @@ public class PlayerCombat : MonoBehaviour
         {
             animator.SetTrigger("attack");
             canAttack = false;
-            
+
         }
         //detect enemies in range of attack
-        // Physics2D.OverlapCircleAll();
+        // this adda an invisible sphere around our attack point and it will give it a range we decide 
+                    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+                    foreach (Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("enemy hit");
+        }
+
         //damage them
+
     }
 }
