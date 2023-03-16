@@ -29,6 +29,10 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {   
+        if (CurrentHealth <= 0)
+        {
+            enemyDie();
+        }
         // transform.postion is the position of the object and player.transform.position is the position of the player
         // distance = Vector2.Distance(transform.position, player.transform.position);
         // direction now equals to one object following the other
@@ -51,12 +55,12 @@ public class Enemy : MonoBehaviour
 
         // Move the enemy towards the player using the movement vector
         transform.position += (Vector3)movement;
+
+        
         }
     }
 
 
-// hurt animation
-//  ------------- 
 // enemy takes damage
     public void takeDamage(int damage)
     {
@@ -65,10 +69,16 @@ public class Enemy : MonoBehaviour
             CurrentHealth -= damage;
         } else
         {
-            // add die animation
-            Destroy(gameObject);
+            // enemy has no health so dies
+            enemyDie();
         }
         
+    }
+
+    public void enemyDie()
+    {
+        // add die animation
+        Destroy(gameObject);
     }
 
     }
