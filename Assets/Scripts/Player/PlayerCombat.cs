@@ -28,6 +28,13 @@ public class PlayerCombat : MonoBehaviour
             Attack();
             
         }
+        if (animator.isActiveAndEnabled){
+            Debug.Log("activated");
+        
+        } else if(animator.isActiveAndEnabled == false)
+        {
+            Debug.Log("deactivated");
+        }
     }
 
     private void Attack()

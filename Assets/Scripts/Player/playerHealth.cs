@@ -12,6 +12,7 @@ public class playerHealth : MonoBehaviour
     private Level1Manager level1Manager;
     public GameObject DeathScreen;
     public bool isAttacking;
+    public Animator attackAnimation;
 
 
 
@@ -21,12 +22,14 @@ public class playerHealth : MonoBehaviour
     private void Start()
     {
         maxHealth = health;
+        
     }
 
     public void update()
     {   
 // this ensures the gealth bar stays between 0 - 1, if the health is less than zero is sets it to zero and if its more than one it sets it to one.
         healthbar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1);
+        
     }
     public void takeDamage(string damageType)
     {  
