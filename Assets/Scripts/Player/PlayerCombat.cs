@@ -26,14 +26,14 @@ public class PlayerCombat : MonoBehaviour
         {   
 
             canAttack = true;
-            Attack();
+            MeleeAttack();
 
             
         }
         
     }
 
-    private void Attack()
+    private void MeleeAttack()
     {
 //Play an attack animation
         if(canAttack)
@@ -44,13 +44,22 @@ public class PlayerCombat : MonoBehaviour
 // detect enemies in range of attack
 // this adda an invisible sphere around our attack point and it will give it a range we decide             
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-            
+
             foreach (Collider2D enemy in hitEnemies)
 //damage them
             {
-            Debug.Log("enemy hit");
+            enemy.GetComponent<Enemy>().takeDamage(50);
             }
         }
+    }
+//  so we can see the range of the attack point
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawSphere(attackPoint.position, attackRange);
     }
 
 

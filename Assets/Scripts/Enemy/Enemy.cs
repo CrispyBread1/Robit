@@ -16,10 +16,13 @@ public class Enemy : MonoBehaviour
 
     public float distanceChase;
 
+    public int MaxHealth = 100;
+    public int CurrentHealth;
+
     // Start is called before the first frame update
     public void Start()
     {
-
+        CurrentHealth = MaxHealth;
 
     }
 
@@ -49,6 +52,23 @@ public class Enemy : MonoBehaviour
         // Move the enemy towards the player using the movement vector
         transform.position += (Vector3)movement;
         }
+    }
+
+
+// hurt animation
+//  ------------- 
+// enemy takes damage
+    public void takeDamage(int damage)
+    {
+        if (CurrentHealth > 0)
+        {
+            CurrentHealth -= damage;
+        } else
+        {
+            // add die animation
+            Destroy(gameObject);
+        }
+        
     }
 
     }
