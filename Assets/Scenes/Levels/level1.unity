@@ -2333,6 +2333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  animator: {fileID: 1559127995}
   jumpSpeed: 7
 --- !u!50 &1559127993
 Rigidbody2D:

@@ -7,12 +7,14 @@ public class Player : MonoBehaviour
     [SerializeField]private float speed;
     private Rigidbody2D playerBody;
     public Animator animator;
+    private bool canAttack;
     // private bool isJumping;
     // [SerializeField]private float jump;
     private bool isGrounded;
     [SerializeField]private float jumpSpeed = 10f;
     private Level1Manager levelManager;
     private RespawnScript respawnScript;
+
     
 
 
@@ -45,9 +47,11 @@ public class Player : MonoBehaviour
                     isGrounded = false;
             }
 
-        if (Input.GetKey(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J))
         {   
+            canAttack = true;
             Attack();
+            
         }
     // Animation -
         // set animator to true or false
@@ -71,7 +75,12 @@ public class Player : MonoBehaviour
     private void Attack()
     {
         //Play an attack animation
-        animator.SetTrigger("Attack");
+        if(canAttack)
+        {
+            animator.SetTrigger("attack");
+            canAttack = false;
+            
+        }
         //detect enemies in range of attack
 
         //damage them
