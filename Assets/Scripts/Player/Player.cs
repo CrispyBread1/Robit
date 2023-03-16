@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     // [SerializeField]private float jump;
     private bool isGrounded;
     [SerializeField]private float jumpSpeed = 10f;
-    private Level1Manager levelManager;
+    // private Level1Manager levelManager;
     private RespawnScript respawnScript;
     private Animator animator;
 

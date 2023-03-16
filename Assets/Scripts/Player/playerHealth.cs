@@ -9,7 +9,7 @@ public class playerHealth : MonoBehaviour
     [SerializeField]private float maxHealth;
     public Image healthbar;
     private Player player;
-    private Level1Manager level1Manager;
+    // private Level1Manager level1Manager;
     public GameObject DeathScreen;
     public bool isAttacking;
     public Animator attackAnimation;
