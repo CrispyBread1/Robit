@@ -523,7 +523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386567425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27, y: 0.09, z: 0}
+  m_LocalPosition: {x: 0.214, y: 0.233, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1665,7 +1665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1220946254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1749,6 +1749,8 @@ MonoBehaviour:
   player: {fileID: 1559127988}
   speed: 1
   distanceChase: 5
+  MaxHealth: 100
+  CurrentHealth: 0
 --- !u!61 &1220946257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2346,7 +2348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559127988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.08, z: -0.5}
+  m_LocalPosition: {x: 0.4, y: 0.09, z: -0.5}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2467,7 +2469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1559127995}
   attackPoint: {fileID: 386567426}
-  attackRange: 4
+  attackRange: 0.6
   enemyLayers:
     serializedVersion: 2
     m_Bits: 8
