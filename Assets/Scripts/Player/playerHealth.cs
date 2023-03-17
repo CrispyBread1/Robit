@@ -35,11 +35,12 @@ public class playerHealth : MonoBehaviour
 // player takes damage
     public void takeDamage(float takeDamage)
     {  
+        Debug.Log("i am in takeDagame functuion in playerHealth");
         if(health <= 0){
             die();
         }
         health -= takeDamage;
-        healthbar.fillAmount -= (takeDamage / 10);
+        healthbar.fillAmount -= (takeDamage / 100);
         isDead(health);
     }
 

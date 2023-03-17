@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
 
     private void Start() {
 
+        playerHealth = GetComponent<playerHealth>();
         respawnScript = GetComponent<RespawnScript>();
         playerBody = GetComponent<Rigidbody2D>();
         isGrounded = true;
@@ -58,7 +59,7 @@ public class Player : MonoBehaviour
 
     private void Jump(){
         GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
-                    isGrounded = false;
+        isGrounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -75,6 +76,7 @@ public class Player : MonoBehaviour
 
     public void getHit(float damage)
     {
+        // Debug.Log(damage);
         playerHealth.takeDamage(damage);
     }
     
