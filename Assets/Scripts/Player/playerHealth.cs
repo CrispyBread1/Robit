@@ -35,7 +35,7 @@ public class playerHealth : MonoBehaviour
 // player takes damage
     public void takeDamage(float takeDamage)
     {  
-        Debug.Log("i am in takeDagame functuion in playerHealth");
+        // Debug.Log("i am in takeDagame functuion in playerHealth");
         if(health <= 0){
             die();
         }
