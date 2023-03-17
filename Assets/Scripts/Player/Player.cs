@@ -44,8 +44,7 @@ public class Player : MonoBehaviour
     // Jump -
         if (Input.GetKey(KeyCode.Space) && isGrounded)
             {
-                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
-                    isGrounded = false;
+                   Jump(); 
             }
 
     // Animation -
@@ -53,6 +52,12 @@ public class Player : MonoBehaviour
         // run name is equal to animation parameter in animation window
         // horizontal is 0 (false) = idle animation
         animator.SetBool("run", HorizontalInput !=0);
+        animator.SetBool("grounded", isGrounded);
+    }
+
+    private void Jump(){
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
+                    isGrounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
