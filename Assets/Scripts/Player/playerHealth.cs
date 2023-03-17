@@ -60,6 +60,7 @@ public class playerHealth : MonoBehaviour
 // player has died runs the deathscreen
     private void die()
     {
+        Destroy(gameObject);
         DeathScreen.SetActive(true);
     }
 
