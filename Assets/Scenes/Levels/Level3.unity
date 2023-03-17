@@ -64998,8 +64998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7cf0c1593f14303b3e8686ad755564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FollowSpeed: 2
-  cameraYoffsetposition: 2
+  FollowSpeed: 30
+  cameraYoffsetposition: 1
   target: {fileID: 128300851}
 --- !u!1 &1846473534
 GameObject:
