@@ -44,8 +44,7 @@ public class Player : MonoBehaviour
 
     // Jump -
         if (Input.GetKey(KeyCode.Space) && isGrounded)
-            {
-features/jump
+        {
                  Jump(); 
         }
 
