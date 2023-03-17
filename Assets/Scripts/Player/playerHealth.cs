@@ -33,37 +33,16 @@ public class playerHealth : MonoBehaviour
     }
 
 // player takes damage
-    public void takeDamage(string damageType)
+    public void takeDamage(float takeDamage)
     {  
         if(health <= 0){
             die();
         }
-        else if (damageType == "Melee")
-        {
-            health -= 25;
-            healthbar.fillAmount -= 0.25f;
-            isDead(health);
-        }
-        else if (damageType == "Bullet")
-        {
-            health -= 10;
-            healthbar.fillAmount -= 0.1f;
-            isDead(health);
-        }
+        health -= takeDamage;
+        healthbar.fillAmount -= (takeDamage / 10);
+        isDead(health);
     }
 
-// If the player gets hit 
-    // private void OnCollisionEnter2D(Collision2D collision){
-    //     if (collision.gameObject.CompareTag("EnemyHit"))
-    //     {
-    //         takeDamage("Melee");
-    //     }
-
-    //     if (collision.gameObject.CompareTag("Bullet"))
-    //     {
-    //         takeDamage("Bullet");
-    //     }
-    // }
 
     private void IsAttacking(){
         isAttacking = true;
