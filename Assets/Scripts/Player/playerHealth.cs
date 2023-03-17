@@ -14,7 +14,7 @@ public class playerHealth : MonoBehaviour
 
     public bool isAttacking;
 
-    public Animator attackAnimation;
+    
 
 
 
