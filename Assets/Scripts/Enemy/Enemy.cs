@@ -29,10 +29,10 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {   
-        if (CurrentHealth <= 0)
-        {
-            enemyDie();
-        }
+        // if (CurrentHealth <= 0)
+        // {
+        //     enemyDie();
+        // }
         // transform.postion is the position of the object and player.transform.position is the position of the player
         // distance = Vector2.Distance(transform.position, player.transform.position);
         // direction now equals to one object following the other
@@ -66,7 +66,13 @@ public class Enemy : MonoBehaviour
     {
         if (CurrentHealth > 0)
         {
+//  add an animation to take damage
+//          -----------------------
             CurrentHealth -= damage;
+            if (CurrentHealth <= 0)
+            {
+                enemyDie();
+            }
         } else
         {
             // enemy has no health so dies
