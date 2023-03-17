@@ -8,6 +8,7 @@ TagManager:
   - EnemyHit
   - Bullet
   - Wall
+  - Crystal
   layers:
   - Default
   - TransparentFX
