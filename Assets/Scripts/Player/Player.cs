@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     // private Level1Manager levelManager;
     private RespawnScript respawnScript;
     private Animator animator;
+    private playerHealth playerHealth;
 
 
 
@@ -44,8 +45,8 @@ public class Player : MonoBehaviour
     // Jump -
         if (Input.GetKey(KeyCode.Space) && isGrounded)
             {
-                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
-                    isGrounded = false;
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
+                isGrounded = false;
             }
 
     // Animation -
@@ -65,6 +66,11 @@ public class Player : MonoBehaviour
         }
 
     // if collided with enemy pass through a certain value to take health down by
+    }
+
+    public void getHit(float damage)
+    {
+        playerHealth.takeDamage(damage);
     }
     
 
