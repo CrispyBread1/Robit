@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
     public int attackSpeed;
     
     public  EnemyCombat enemyCombat;
+    private bool allowedToMove = true;
 
     // Start is called before the first frame update
     public void Start()
@@ -54,7 +55,7 @@ public class Enemy : MonoBehaviour
         xMovement = Mathf.Sign(xDistance) * speed * Time.deltaTime;
 
 
-        if (xDistance < distanceChase){
+        if (xDistance < distanceChase && allowedToMove){
         // movement vector that only moves in the X direction
         Vector2 movement = new Vector2(xMovement, 0f);
 
@@ -110,7 +111,20 @@ public class Enemy : MonoBehaviour
     public void enemyDie()
     {
         // add die animation
+        enemyCombat.animator.SetTrigger("Dead");
+        // 
+    }
+
+    public void destroyEnemy()
+    {
         Destroy(gameObject);
+    }
+
+
+// stops the enemy moving while dieing
+    public void stopMoving()
+    {
+        allowedToMove = false;
     }
 
     }
