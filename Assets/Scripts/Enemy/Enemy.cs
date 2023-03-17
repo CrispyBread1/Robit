@@ -9,27 +9,64 @@ public class Enemy : MonoBehaviour
     public float speed;
     private float distance;
     public float xDistance;
-    private float xMovement;
+    public float xMovement;
     public float distanceChase;
-    public int MaxHealth = 100;
+
+    // private bool inAttackRange = false;
+    public float attackRange;
+
+    private int MaxHealth = 100;
     public int CurrentHealth;
-    public float timer;
+    private float timer;
     public int attackSpeed;
     public  EnemyCombat enemyCombat;
     private bool allowedToMove = true;
 
     public float ScaleOfEnemy;
 
+    public Animator animator;
+    public bool hasRunningAnimation;
+  
+
+    public float startingPostionX;
+
     // Start is called before the first frame update
     public void Start()
     {
+
         CurrentHealth = MaxHealth;
+        animator = GetComponent<Animator>();
+        startingPostionX = transform.position.x;
+
+        // animator.
 
     }
 
     // Update is called once per frame
     public void Update()
     {   
+        
+        // gets the starig postion of the enemy, and if its moving the postion will change and thus the anitmaion runs if its moving
+        if (hasRunningAnimation)
+        {
+            if (transform.position.x > startingPostionX || transform.position.x < startingPostionX)
+            {
+                animator.SetBool("run", true);
+                
+            }
+        }
+
+        
+
+        if (xDistance == attackRange || xDistance == attackRange)
+        {
+            enemyCombat.attack();
+            // stopMoving();
+        }
+
+        
+
+
         timer += Time.deltaTime;
         // if (CurrentHealth <= 0)
         // {
@@ -122,6 +159,11 @@ public class Enemy : MonoBehaviour
     public void stopMoving()
     {
         allowedToMove = false;
+    }
+
+    public void startMoving()
+    {
+        allowedToMove = true;
     }
 
     }
