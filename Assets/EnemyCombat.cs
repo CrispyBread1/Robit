@@ -10,7 +10,10 @@ public class EnemyCombat : MonoBehaviour
     public float attackRange = 0.5f;
     private bool canAttack;
     public LayerMask enemyLayers;
-    public float timer;
+    
+
+    
+    // private Enemy enemy;
     
 
 
@@ -24,28 +27,28 @@ public class EnemyCombat : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer > 10)
-        {   
-            canAttack = true;
-            MeleeAttack();
-            
-        } 
+        
     }
 
+    
+    public void attack()
+    {
+        canAttack = true;
+        MeleeAttack();
+    }
 
     private void MeleeAttack()
     {
 //Play an attack animation
         if(canAttack)
         {
-            animator.SetBool("CanAttack", canAttack);
+            animator.SetTrigger("Attack");
             canAttack = false;
             
 // detect enemies in range of attack
 // this adda an invisible sphere around our attack point and it will give it a range we decide             
             Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+            Debug.Log(hitPlayer.Length);
 
             foreach (Collider2D player in hitPlayer)
 //damage them
@@ -54,10 +57,10 @@ public class EnemyCombat : MonoBehaviour
             }
         }
 
-        timer += 0;
+        
     }
 
-    
+
 //  so we can see the range of the attack point
     private void OnDrawGizmosSelected()
     {
@@ -65,6 +68,7 @@ public class EnemyCombat : MonoBehaviour
         {
             return;
         }
+
         Gizmos.DrawSphere(attackPoint.position, attackRange);
     }
 
