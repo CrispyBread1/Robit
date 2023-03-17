@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private RespawnScript respawnScript;
     private Animator animator;
     private playerHealth playerHealth;
+    public int crystalValue = 5;
 
 
 
@@ -46,7 +47,7 @@ public class Player : MonoBehaviour
     // Jump -
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
-                 Jump(); 
+            Jump(); 
         }
 
     // Animation -
@@ -79,6 +80,25 @@ public class Player : MonoBehaviour
         // Debug.Log(damage);
         playerHealth.takeDamage(damage);
     }
-    
+
+    public void OnTriggerEnter2D(Collider2D crystal)
+    {
+
+        if (crystal.gameObject.CompareTag("Crystal"))
+        {   
+            ScoreManager.instance.ChangeScore(crystalValue);
+            // StartCoroutine(DestroyCrystalAfterDelay(crystal.gameObject, 1.0f));
+            Destroy(crystal.gameObject);
+        }
+
+    }
+    // private IEnumerator DestroyCrystalAfterDelay(GameObject crystal, float delay)
+    // {
+    //     // Wait for the specified delay duration
+    //     yield return new WaitForSeconds(delay);
+
+    //     // Destroy the crystal after the delay
+    //     Destroy(crystal);
+    // }
 
 }

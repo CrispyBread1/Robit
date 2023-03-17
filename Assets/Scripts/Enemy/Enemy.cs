@@ -7,18 +7,14 @@ public class Enemy : MonoBehaviour
 
     public GameObject player;
     public float speed;
-
     private float distance;
     public float xDistance;
     private float xMovement;
     public float distanceChase;
-
     public int MaxHealth = 100;
     public int CurrentHealth;
     public float timer;
-
     public int attackSpeed;
-    
     public  EnemyCombat enemyCombat;
     private bool allowedToMove = true;
 
