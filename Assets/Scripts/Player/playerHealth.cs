@@ -53,17 +53,17 @@ public class playerHealth : MonoBehaviour
     }
 
 // If the player gets hit 
-    private void OnCollisionEnter2D(Collision2D collision){
-        if (collision.gameObject.CompareTag("EnemyHit"))
-        {
-            takeDamage("Melee");
-        }
+    // private void OnCollisionEnter2D(Collision2D collision){
+    //     if (collision.gameObject.CompareTag("EnemyHit"))
+    //     {
+    //         takeDamage("Melee");
+    //     }
 
-        if (collision.gameObject.CompareTag("Bullet"))
-        {
-            takeDamage("Bullet");
-        }
-    }
+    //     if (collision.gameObject.CompareTag("Bullet"))
+    //     {
+    //         takeDamage("Bullet");
+    //     }
+    // }
 
     private void IsAttacking(){
         isAttacking = true;
