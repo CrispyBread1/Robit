@@ -8,14 +8,15 @@ public class Player : MonoBehaviour
     private Rigidbody2D playerBody;
 
     // private bool isJumping;
+
     // [SerializeField]private float jump;
     private bool isGrounded;
     [SerializeField]private float jumpSpeed = 10f;
+
     // private Level1Manager levelManager;
     private RespawnScript respawnScript;
     private Animator animator;
 
-    
 
 
     private void Start() {

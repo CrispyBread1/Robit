@@ -27,7 +27,7 @@ public class playerHealth : MonoBehaviour
 
     public void update()
     {   
-// this ensures the gealth bar stays between 0 - 1, if the health is less than zero is sets it to zero and if its more than one it sets it to one.
+// this ensures the health bar stays between 0 - 1, if the health is less than zero is sets it to zero and if its more than one it sets it to one.
         healthbar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1);
         
     }
