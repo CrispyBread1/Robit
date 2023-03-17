@@ -851,8 +851,8 @@ MonoBehaviour:
   MaxHealth: 100
   CurrentHealth: 0
   timer: 0
-  attackSpeed: 5
-  enemyCombat: {fileID: 0}
+  attackSpeed: 2
+  enemyCombat: {fileID: 646124318}
 --- !u!114 &646124318
 MonoBehaviour:
   m_ObjectHideFlags: 0

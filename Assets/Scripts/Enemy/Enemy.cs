@@ -62,12 +62,7 @@ public class Enemy : MonoBehaviour
         transform.position += (Vector3)movement;
 
         
-
-        if(timer >= attackSpeed)
-        {
-            enemyCombat.attack();
-            resetTimer();
-        }
+        attack();
         
         }
 
@@ -75,6 +70,15 @@ public class Enemy : MonoBehaviour
             transform.localScale = new Vector3(6f,6f,6f);
         } else if(xDistance > -0.01f){
             transform.localScale = new Vector3(-6f,6f,6f);
+        }
+    }
+
+    public void attack()
+    {
+        if (timer > attackSpeed)
+        {
+            enemyCombat.attack();
+            resetTimer();
         }
     }
 
