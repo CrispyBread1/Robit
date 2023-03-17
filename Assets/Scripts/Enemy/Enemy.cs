@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     public  EnemyCombat enemyCombat;
     private bool allowedToMove = true;
 
+    public float ScaleOfEnemy;
+
     // Start is called before the first frame update
     public void Start()
     {
@@ -64,9 +66,9 @@ public class Enemy : MonoBehaviour
         }
 
         if(xDistance < 0.01f){
-            transform.localScale = new Vector3(6f,6f,6f);
+            transform.localScale = new Vector3(ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
         } else if(xDistance > -0.01f){
-            transform.localScale = new Vector3(-6f,6f,6f);
+            transform.localScale = new Vector3(-ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
         }
     }
 
@@ -106,11 +108,10 @@ public class Enemy : MonoBehaviour
 
     public void enemyDie()
     {
-        // add die animation
         enemyCombat.animator.SetTrigger("Dead");
-        // 
+        // this animation triggeres the destroyEnemy()
     }
-
+// this gets triggered from the end of the animation of when the enemy dies hoe
     public void destroyEnemy()
     {
         Destroy(gameObject);
