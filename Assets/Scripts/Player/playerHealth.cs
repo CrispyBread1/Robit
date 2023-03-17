@@ -7,22 +7,22 @@ public class playerHealth : MonoBehaviour
 {
     [SerializeField]private float health;
     [SerializeField]private float maxHealth;
-    public Image healthbar;
-    private Player player;
-    // private Level1Manager level1Manager;
     public GameObject DeathScreen;
+    public Image healthbar;
+
+    private Player player;
+
     public bool isAttacking;
+
     public Animator attackAnimation;
 
 
 
 
 
-    // Start is called before the first frame update
     private void Start()
     {
         maxHealth = health;
-        
     }
 
     public void update()
@@ -31,23 +31,28 @@ public class playerHealth : MonoBehaviour
         healthbar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1);
         
     }
+
+// player takes damage
     public void takeDamage(string damageType)
     {  
-
         if(health <= 0){
-            DeathScreen.SetActive(true);
+            die();
         }
         else if (damageType == "Melee")
         {
             health -= 25;
             healthbar.fillAmount -= 0.25f;
+            isDead(health);
         }
         else if (damageType == "Bullet")
         {
             health -= 10;
             healthbar.fillAmount -= 0.1f;
+            isDead(health);
         }
     }
+
+// If the player gets hit 
     private void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.CompareTag("EnemyHit"))
         {
@@ -62,6 +67,20 @@ public class playerHealth : MonoBehaviour
 
     private void IsAttacking(){
         isAttacking = true;
+    }
+
+// passing through the curent player health to check if dead
+    private void isDead(float health)
+    {
+        if (health <= 0){
+            die();
+        }
+    }
+
+// player has died runs the deathscreen
+    private void die()
+    {
+        DeathScreen.SetActive(true);
     }
 
     
