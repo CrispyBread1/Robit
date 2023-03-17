@@ -9,15 +9,17 @@ public class Enemy : MonoBehaviour
     public float speed;
 
     private float distance;
-
-    private float xDistance;
-
+    public float xDistance;
     private float xMovement;
-
     public float distanceChase;
 
     public int MaxHealth = 100;
     public int CurrentHealth;
+    public float timer;
+
+    public int attackSpeed;
+    
+    public  EnemyCombat enemyCombat;
 
     // Start is called before the first frame update
     public void Start()
@@ -29,6 +31,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {   
+        timer += Time.deltaTime;
         // if (CurrentHealth <= 0)
         // {
         //     enemyDie();
@@ -49,6 +52,8 @@ public class Enemy : MonoBehaviour
 
         //  X movement needed to reach the player at the wanted speed
         xMovement = Mathf.Sign(xDistance) * speed * Time.deltaTime;
+
+
         if (xDistance < distanceChase){
         // movement vector that only moves in the X direction
         Vector2 movement = new Vector2(xMovement, 0f);
@@ -57,9 +62,30 @@ public class Enemy : MonoBehaviour
         transform.position += (Vector3)movement;
 
         
+        attack();
+        
+        }
+
+        if(xDistance < 0.01f){
+            transform.localScale = new Vector3(6f,6f,6f);
+        } else if(xDistance > -0.01f){
+            transform.localScale = new Vector3(-6f,6f,6f);
         }
     }
 
+    public void attack()
+    {
+        if (timer > attackSpeed)
+        {
+            enemyCombat.attack();
+            resetTimer();
+        }
+    }
+
+    public void resetTimer()
+    {
+        timer = 0;
+    }
 
 // enemy takes damage
     public void takeDamage(int damage)

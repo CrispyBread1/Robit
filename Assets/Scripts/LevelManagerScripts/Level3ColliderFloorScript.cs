@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// This code chages all 2DColliders to the tag of "Floor"
 public class Level3ColliderFloorScript : MonoBehaviour
 {
     public string targetTag = "Floor";
