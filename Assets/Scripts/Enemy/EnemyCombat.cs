@@ -40,8 +40,8 @@ public class EnemyCombat : MonoBehaviour
     private void MeleeAttack()
     {
 //Play an attack animation
-        if(canAttack)
-        {
+        // if(canAttack)
+        // {
             animator.SetTrigger("Attack");
             
             
@@ -56,8 +56,8 @@ public class EnemyCombat : MonoBehaviour
             player.GetComponent<Player>().getHit(25);
             }
 
-            canAttack = false;
-        }
+            // canAttack = false;
+        // }
 
         
     }
