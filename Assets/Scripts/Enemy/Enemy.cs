@@ -9,7 +9,10 @@ public class Enemy : MonoBehaviour
     public float speed;
     private float distance;
     public float xDistance;
-    public float xMovement;
+    private float xMovement;
+    public float stepSize;
+    public float StepTImer;
+
     public float distanceChase;
 
     // private bool inAttackRange = false;
@@ -33,7 +36,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-
+        stepSize = ScaleOfEnemy / 100;
         CurrentHealth = MaxHealth;
         animator = GetComponent<Animator>();
         startingPostionX = transform.position.x;
@@ -68,6 +71,9 @@ public class Enemy : MonoBehaviour
 
 
         timer += Time.deltaTime;
+        StepTImer += Time.deltaTime;
+
+        
         // if (CurrentHealth <= 0)
         // {
         //     enemyDie();
@@ -88,25 +94,33 @@ public class Enemy : MonoBehaviour
 
         //  X movement needed to reach the player at the wanted speed
         xMovement = Mathf.Sign(xDistance) * speed * Time.deltaTime;
-
-
-        if (xDistance < distanceChase && allowedToMove){
-        // movement vector that only moves in the X direction
-        Vector2 movement = new Vector2(xMovement, 0f);
-
-        // Move the enemy towards the player using the movement vector
-        transform.position += (Vector3)movement;
-
         
+        // if movemtn has swtich sides the steps direction will too
+        
+        if (xDistance < distanceChase && allowedToMove && StepTImer >= ScaleOfEnemy / 100){
+        // movement vector that only moves in the X directio
+        // Move the enemy towards the player using the movement vector
+        takeAStep(stepSize);
         attack();
         
         }
 
-        if(xDistance < 0.01f){
+        if(xDistance >= 0.1f && StepTImer >= ScaleOfEnemy / 100){
             transform.localScale = new Vector3(ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
-        } else if(xDistance > -0.01f){
-            transform.localScale = new Vector3(-ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
+            stepSize = stepSize * 1f;
         }
+        if(xDistance >= -0.01f && StepTImer >= ScaleOfEnemy / 100){
+            transform.localScale = new Vector3(-ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
+            stepSize = stepSize * -1f;
+        }
+    }
+
+    public void takeAStep(float step)
+    {
+        Vector2 movement = new Vector2(step, 0f);
+        // Move the enemy towards the player using the movement vector
+        transform.position += (Vector3)movement;
+        StepTImer = 0f;
     }
 
     public void attack()
@@ -166,4 +180,10 @@ public class Enemy : MonoBehaviour
         allowedToMove = true;
     }
 
+    public void changeDirection(float direction)
+    {
+        Debug.Log(direction);
+        stepSize = direction;
     }
+
+}
