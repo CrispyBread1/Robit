@@ -8,16 +8,13 @@ public class EnemyCombat : MonoBehaviour
     public Animator animator;
     public Transform attackPoint;
     public float attackRange = 0.5f;
-    private bool canAttack;
+    // private bool canAttack;
     public LayerMask playerLayers;
     
+    Collider2D[] hitPlayers;
 
     
     // private Enemy enemy;
-    
-
-
-    
 
     void Start()
     {
@@ -27,37 +24,40 @@ public class EnemyCombat : MonoBehaviour
 
     void Update()
     {
-        
+        hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+        // Debug.Log(hitPlayers[0]);
     }
 
     
     public void attack()
     {
-        canAttack = true;
+        // canAttack = true;
         MeleeAttack();
     }
 
     private void MeleeAttack()
     {
-//Play an attack animation
-        // if(canAttack)
-        // {
-            animator.SetTrigger("Attack");
-            
-            
+
+        animator.SetTrigger("Attack");
+    
 // detect enemies in range of attack
-// this adda an invisible sphere around our attack point and it will give it a range we decide             
-            Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
-            // Debug.Log(hitPlayer[0]);
+// this adda an invisible sphere around our attack point and it will give it a range we decide 
+        
 
-            foreach (Collider2D player in hitPlayer)
-//damage them
-            {
-            player.GetComponent<Player>().getHit(25);
-            }
-
-            // canAttack = false;
+        // while(hitPlayers.Length = 0)
+        // {
+            
+        //     Debug.Log(hitPlayers[0] + "In the hit player");
         // }
+            
+        
+        Debug.Log(hitPlayers[0]);
+        foreach (Collider2D player in hitPlayers)
+//damage them
+        {
+        player.GetComponent<Player>().getHit(25);
+        }
+
 
         
     }

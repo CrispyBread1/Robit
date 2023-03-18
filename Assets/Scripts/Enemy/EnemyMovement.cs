@@ -120,6 +120,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("collidingwith player");
             stopMoving();
         } 
     }

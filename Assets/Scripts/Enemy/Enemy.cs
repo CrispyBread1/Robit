@@ -5,9 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
-    private int MaxHealth = 100;
+    public int MaxHealth = 100;
     public int CurrentHealth;
-    private float timer;
+    public float timer;
     public int attackSpeed;
     private  EnemyCombat enemyCombat;
     public bool enemyHasDamagedAnimation = false;
@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour
 
     public void resetTimer()
     {
-        timer = 0;
+        timer = 0f;
     }
 
 
