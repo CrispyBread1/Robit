@@ -126,7 +126,6 @@ public class EnemyMovement : MonoBehaviour
 
     public void OnCollisionExit2D(Collision2D other)
     {
-        Debug.Log("I am exiting collider");
         startMoving();
     }
     

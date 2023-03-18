@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8292201651d2740d4b9544aea336d853
+guid: b95e8877d67fb4472893a32f1f31f5a7
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,40 +93,18 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: RockStart
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 105
-      height: 75
-    spriteID: 005a36106fbed44f7a37c591347fa1a5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 2, y: 19}
-  - name: RockT1
+  - name: RockDeathFinal
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 87
-      width: 105
-      height: 75
-    spriteID: 39016dc50a96b4021a6d8ad0a14949ec
+      x: 117
+      y: 347
+      width: 63
+      height: 42
+    spriteID: a9d37a31bea0647668eb7f390015b1b5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -135,20 +113,20 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 87}
-    spritePosition: {x: 4, y: 19}
-  - name: RockT2
+    uvTransform: {x: 117, y: 347}
+    spritePosition: {x: 23, y: 19}
+  - name: RockDeath5
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 170
-      width: 105
-      height: 75
-    spriteID: bfc4235537e984cd59dec9bb765e7614
+      x: 117
+      y: 285
+      width: 81
+      height: 54
+    spriteID: 97373bd54b945453c958fbe5d3a8be24
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -157,20 +135,20 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 170}
-    spritePosition: {x: 2, y: 19}
-  - name: RockT3
+    uvTransform: {x: 117, y: 285}
+    spritePosition: {x: 17, y: 7}
+  - name: RockDeath4
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 253
-      width: 105
-      height: 75
-    spriteID: 0080e9112acf0485794b666a0094cf30
+      x: 117
+      y: 223
+      width: 84
+      height: 54
+    spriteID: f8c77e117fc8e45e8a7ea1d6e8d0c11c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,20 +157,20 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 253}
-    spritePosition: {x: 2, y: 19}
-  - name: RockE1
+    uvTransform: {x: 117, y: 223}
+    spritePosition: {x: 17, y: 7}
+  - name: RockDeath3
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 336
-      width: 105
-      height: 75
-    spriteID: 46d71db4fa2234dffb98de5d072dd219
+      x: 117
+      y: 158
+      width: 101
+      height: 57
+    spriteID: b97b3e22b23cd42cbb657cf9037c314a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -201,20 +179,20 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 336}
-    spritePosition: {x: 2, y: 19}
-  - name: RockE2
+    uvTransform: {x: 117, y: 158}
+    spritePosition: {x: 0, y: 19}
+  - name: RockDeath2
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 419
-      width: 105
-      height: 75
-    spriteID: 98631d8175fa740d3b4b0e90d150a9cf
+      x: 117
+      y: 84
+      width: 107
+      height: 66
+    spriteID: 55214639b5bd941659e11fbe7fa72b56
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -223,20 +201,20 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 419}
-    spritePosition: {x: 2, y: 19}
-  - name: RockE3
+    uvTransform: {x: 117, y: 84}
+    spritePosition: {x: 0, y: 19}
+  - name: RockDeath1
     originalName: 
     pivot: {x: 0.5, y: 0}
-    alignment: 7
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 117
       y: 4
-      width: 105
-      height: 75
-    spriteID: d5716b75cff08492eab00cfbb1b039ec
+      width: 107
+      height: 72
+    spriteID: 391a6584197f14396b68f78169329d0c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -246,6 +224,28 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 117, y: 4}
+    spritePosition: {x: 0, y: 19}
+  - name: RockStart
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 105
+      height: 75
+    spriteID: 77fabd1675a9c450fac0d485922a0ce4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
     spritePosition: {x: 2, y: 19}
   characterData:
     bones: []
@@ -321,73 +321,73 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: RockDeathFinal
+    spriteName: RockDeathFinal
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a9d37a31bea0647668eb7f390015b1b5
+    layerID: 23
+    mosaicPosition: {x: 117, y: 347}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RockDeath5
+    spriteName: RockDeath5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 97373bd54b945453c958fbe5d3a8be24
+    layerID: 22
+    mosaicPosition: {x: 117, y: 285}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RockDeath4
+    spriteName: RockDeath4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f8c77e117fc8e45e8a7ea1d6e8d0c11c
+    layerID: 21
+    mosaicPosition: {x: 117, y: 223}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RockDeath3
+    spriteName: RockDeath3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b97b3e22b23cd42cbb657cf9037c314a
+    layerID: 20
+    mosaicPosition: {x: 117, y: 158}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RockDeath2
+    spriteName: RockDeath2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 55214639b5bd941659e11fbe7fa72b56
+    layerID: 19
+    mosaicPosition: {x: 117, y: 84}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RockDeath1
+    spriteName: RockDeath1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 391a6584197f14396b68f78169329d0c
+    layerID: 18
+    mosaicPosition: {x: 117, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: RockStart
     spriteName: RockStart
     isGroup: 0
     parentIndex: -1
-    spriteID: 005a36106fbed44f7a37c591347fa1a5
+    spriteID: 77fabd1675a9c450fac0d485922a0ce4
     layerID: 4
     mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: RockT1
-    spriteName: RockT1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 39016dc50a96b4021a6d8ad0a14949ec
-    layerID: 13
-    mosaicPosition: {x: 4, y: 87}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: RockT2
-    spriteName: RockT2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: bfc4235537e984cd59dec9bb765e7614
-    layerID: 6
-    mosaicPosition: {x: 4, y: 170}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: RockT3
-    spriteName: RockT3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 0080e9112acf0485794b666a0094cf30
-    layerID: 5
-    mosaicPosition: {x: 4, y: 253}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: RockE1
-    spriteName: RockE1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 46d71db4fa2234dffb98de5d072dd219
-    layerID: 10
-    mosaicPosition: {x: 4, y: 336}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: RockE2
-    spriteName: RockE2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 98631d8175fa740d3b4b0e90d150a9cf
-    layerID: 11
-    mosaicPosition: {x: 4, y: 419}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: RockE3
-    spriteName: RockE3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: d5716b75cff08492eab00cfbb1b039ec
-    layerID: 12
-    mosaicPosition: {x: 117, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1

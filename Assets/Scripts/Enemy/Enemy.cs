@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     private float timer;
     public int attackSpeed;
     private  EnemyCombat enemyCombat;
+    public bool enemyHasDamagedAnimation = false;
+    private bool dead = false;
     
     
     public void Start()
@@ -53,12 +55,15 @@ public class Enemy : MonoBehaviour
     {
         if (CurrentHealth > 0)
         {
-//  add an animation to take damage
-//          -----------------------
+            if(enemyHasDamagedAnimation)
+            {
+                enemyCombat.animator.SetTrigger("Damaged");
+            }
+
             CurrentHealth -= damage;
             if (CurrentHealth <= 0)
             {
-                enemyDie();
+                enemyDie();                
             }
         } else
         {
@@ -72,8 +77,9 @@ public class Enemy : MonoBehaviour
 
     public void enemyDie()
     {
-        enemyCombat.animator.SetTrigger("Dead");
-        // this animation triggeres the destroyEnemy()
+        dead = true;
+        enemyCombat.animator.SetBool("Dead", dead);
+        enemyCombat.animator.SetTrigger("Damaged");
     }
 
 
