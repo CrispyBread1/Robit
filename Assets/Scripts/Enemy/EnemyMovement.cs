@@ -10,8 +10,8 @@ public class EnemyMovement : MonoBehaviour
     // private float distance;
     public float xDistance;
     private float xMovement;
-    public float stepSize;
-    public float StepTimer;
+    // public float stepSize;
+    // public float StepTimer;
 
     public float distanceChase;
 
@@ -38,7 +38,7 @@ public class EnemyMovement : MonoBehaviour
         // player = GetComponent<Player>();
         enemy = GetComponent<Enemy>();
         enemyCombat = GetComponent<EnemyCombat>();
-        stepSize = ScaleOfEnemy / 100;
+        // stepSize = ScaleOfEnemy / 10;
         animator = GetComponent<Animator>();
         startingPostionX = transform.position.x;
         
@@ -48,7 +48,7 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         
-        StepTimer += Time.deltaTime;
+        // StepTimer += Time.deltaTime;
 
         // transform.postion is the position of the object and player.transform.position is the position of the player
         // distance = Vector2.Distance(transform.position, player.transform.position);
@@ -66,24 +66,30 @@ public class EnemyMovement : MonoBehaviour
 
         //  X movement needed to reach the player at the wanted speed
         xMovement = Mathf.Sign(xDistance) * speed * Time.deltaTime;
+        // xMovement = Mathf.Sign(xDistance) * speed * stepSize;
+
         
         
         
-        if (xDistance < distanceChase && allowedToMove && StepTimer >= ScaleOfEnemy / 10f){
-        // movement vector that only moves in the X directio
-        // Move the enemy towards the player using the movement vector
-        takeAStep(stepSize);
+        if (xDistance < distanceChase && allowedToMove){
+// movement vector that only moves in the X directio
+ // Move the enemy towards the player using the movement vector
+        Vector2 movement = new Vector2(xMovement, 0f);
+// Move the enemy towards the player using the movement vector
+        transform.position += (Vector3)movement;
+
+        // takeAStep(stepSize);
         enemy.attack();
         
         }
 // if movemtn has swtich sides the steps direction will too
-        if(xDistance >= 0.1f && StepTimer >= ScaleOfEnemy / 100f){
+        if(xDistance <= 0.01f){
             transform.localScale = new Vector3(ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
-            stepSize = stepSize * 1f;
+            // stepSize = stepSize * 1f;
         }
-        if(xDistance >= -0.01f && StepTimer >= ScaleOfEnemy / 100f){
+        if(xDistance >= -0.01f){
             transform.localScale = new Vector3(-ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
-            stepSize = stepSize * -1f;
+            // stepSize = stepSize * -1f;
         }
 
 // gets the starig postion of the enemy, and if its moving the postion will change and thus the anitmaion runs if its moving
@@ -104,14 +110,6 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-    public void takeAStep(float step)
-    {
-        step += startingPostionX;
-        Vector2 movement = new Vector2(step, 0f);
-        // Move the enemy towards the player using the movement vector
-        transform.position += (Vector3)movement;
-        StepTimer = 0f;
-    }
      public void stopMoving()
     {
         allowedToMove = false;
@@ -122,10 +120,20 @@ public class EnemyMovement : MonoBehaviour
         allowedToMove = true;
     }
 
-    public void changeDirection(float direction)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(direction);
-        stepSize = direction;
+        if (collision.gameObject.tag == "Player")
+        {
+            stopMoving();
+        } 
     }
+
+    public void OnCollisionExit2D(Collision2D other)
+    {
+        startMoving();
+    }
+    
+
+    
 
 }
