@@ -95,11 +95,7 @@ public class EnemyMovement : MonoBehaviour
 // gets the starig postion of the enemy, and if its moving the postion will change and thus the anitmaion runs if its moving
         if (hasRunningAnimation)
         {
-            if (transform.position.x > startingPostionX || transform.position.x < startingPostionX)
-            {
-                animator.SetBool("run", true);
-                
-            }
+            animator.SetBool("run", xDistance !=0);
         }
 
         if (xDistance == attackRange || xDistance == attackRange)
@@ -130,6 +126,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void OnCollisionExit2D(Collision2D other)
     {
+        Debug.Log("I am exiting collider");
         startMoving();
     }
     
