@@ -24,12 +24,13 @@ public class EnemyMovement : MonoBehaviour
 
     private Animator animator;
     public bool hasRunningAnimation;
-  
+
     private  EnemyCombat enemyCombat;
 
     public float startingPostionX;
 
     private Enemy enemy;
+
 
     
     void Start()
@@ -82,7 +83,7 @@ public class EnemyMovement : MonoBehaviour
         enemy.attack();
         
         }
-// if movemtn has swtich sides the steps direction will too
+// if movement has swtiched sides the steps direction will too
         if(xDistance <= 0.01f){
             transform.localScale = new Vector3(ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
             // stepSize = stepSize * 1f;
@@ -106,7 +107,7 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-     public void stopMoving()
+    public void stopMoving()
     {
         allowedToMove = false;
     }
@@ -114,6 +115,7 @@ public class EnemyMovement : MonoBehaviour
     public void startMoving()
     {
         allowedToMove = true;
+        Debug.Log("enemy moving");
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -125,10 +127,14 @@ public class EnemyMovement : MonoBehaviour
         } 
     }
 
-    public void OnCollisionExit2D(Collision2D other)
-    {
+    public void OnTriggerEnter2D(Collider2D other)
+    {   
+        if ( other.gameObject.tag == "Player"){
         startMoving();
+        Debug.Log("enemy triggered");
+        }
     }
+
     
 
     
