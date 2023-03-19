@@ -12,21 +12,22 @@ public class Enemy : MonoBehaviour
     private  EnemyCombat enemyCombat;
     public bool enemyHasDamagedAnimation = false;
     private bool dead = false;
+    public bool isMeleeCombat;
     
     
     public void Start()
     {
-        
         enemyCombat = GetComponent<EnemyCombat>();
         CurrentHealth = MaxHealth;
-
     }
 
     
     public void Update()
     {   
-
+        if (isMeleeCombat)
+        {
         timer += Time.deltaTime;
+        }
         
     }
 
@@ -34,7 +35,7 @@ public class Enemy : MonoBehaviour
 
     public void attack()
     {
-        if (timer > attackSpeed)
+        if (timer > attackSpeed && isMeleeCombat)
         {
             enemyCombat.attack();
             resetTimer();
