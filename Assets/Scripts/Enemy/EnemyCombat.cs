@@ -10,6 +10,7 @@ public class EnemyCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public bool canAttack = false;
     public LayerMask playerLayers;
+    public int enemyDamage;
     
     Collider2D[] hitPlayers;
 
@@ -59,7 +60,7 @@ public class EnemyCombat : MonoBehaviour
         // {
             
             // Debug.Log(player);
-            hitPlayers[0].GetComponent<Player>().getHit(25);
+            hitPlayers[0].GetComponent<Player>().getHit(enemyDamage);
             canAttack = false;
         // }
         }

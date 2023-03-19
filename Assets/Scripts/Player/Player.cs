@@ -72,6 +72,11 @@ public class Player : MonoBehaviour
             isGrounded = true;
         }
 
+        if (collision.gameObject.tag == "Bullet")
+        {
+            getHit(15);
+        }
+
     // if collided with enemy pass through a certain value to take health down by
     }
 

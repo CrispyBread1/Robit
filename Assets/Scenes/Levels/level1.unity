@@ -1691,6 +1691,7 @@ MonoBehaviour:
   playerLayers:
     serializedVersion: 2
     m_Bits: 64
+  enemyDamage: 0
 --- !u!1 &1081360667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,6 +3411,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 2543110427402068681, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: enemyDamage
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2543110427402068682, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: isMeleeCombat
       value: 1
@@ -3530,6 +3535,10 @@ PrefabInstance:
     - target: {fileID: 6732843387028422349, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732843387028422390, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: enemyDamage
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
