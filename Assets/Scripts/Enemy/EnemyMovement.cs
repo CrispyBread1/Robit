@@ -18,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
     // private bool inAttackRange = false;
     public float attackRange;
 
-    private bool allowedToMove = true;
+    public bool allowedToMove = true;
 
     public float ScaleOfEnemy;
 
