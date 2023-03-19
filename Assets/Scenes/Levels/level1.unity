@@ -3401,7 +3401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2543110427402068662, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2543110427402068673, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -3487,6 +3487,10 @@ PrefabInstance:
     - target: {fileID: 6732843387028422337, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: m_Name
       value: SquidEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732843387028422337, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6732843387028422346, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: isMeleeCombat
