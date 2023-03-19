@@ -103,8 +103,8 @@ public class EnemyMovement : MonoBehaviour
 
         if (xDistance <= attackRange)
         {
-            // Debug.Log("Iam reapeting attack in attack range" );
-            enemyCombat.attack();
+ // if the player is in attack range the attack conpnent is called in the enemy script, which then calls attack in enenym combat, however the enemy script has a timer so it doenst attack all at once.
+            enemy.attack();
             // stopMoving();
         }
 
