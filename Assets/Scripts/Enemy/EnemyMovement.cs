@@ -82,7 +82,7 @@ public class EnemyMovement : MonoBehaviour
             transform.position += (Vector3)movement;
             // Debug.Log(transform.position);
 
-            enemy.attack();
+            // enemy.attack();
         
         }
 // if movement has swtiched sides the steps direction will too
@@ -101,10 +101,11 @@ public class EnemyMovement : MonoBehaviour
             animator.SetBool("run", xDistance != 0);
         }
 
-        if (xDistance == attackRange || xDistance == attackRange)
+        if (xDistance <= attackRange)
         {
+            // Debug.Log("Iam reapeting attack in attack range" );
             enemyCombat.attack();
-            stopMoving();
+            // stopMoving();
         }
 
     }
@@ -117,7 +118,7 @@ public class EnemyMovement : MonoBehaviour
     public void startMoving()
     {
         allowedToMove = true;
-        Debug.Log("enemy moving");
+        // Debug.Log("enemy moving");
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -126,7 +127,7 @@ public class EnemyMovement : MonoBehaviour
         {
             stopMoving();
         } 
-        Debug.Log("collidingwith player");
+        // Debug.Log("collidingwith player");
     }
 
     public void OnCollisionExit2D(Collision2D other)
@@ -134,7 +135,7 @@ public class EnemyMovement : MonoBehaviour
         if ( other.gameObject.tag == "Player"){
         startMoving();
         }
-        Debug.Log("enemy triggered");
+        // Debug.Log("enemy triggered");
     }
 
     
