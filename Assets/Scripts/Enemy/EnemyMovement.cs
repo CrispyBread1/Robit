@@ -73,14 +73,16 @@ public class EnemyMovement : MonoBehaviour
         
         
         if (xDistance < distanceChase && allowedToMove){
+            // Debug.Log("I am moving");
 // movement vector that only moves in the X directio
  // Move the enemy towards the player using the movement vector
-        Vector2 movement = new Vector2(xMovement, 0f);
+            Vector2 movement = new Vector2(xMovement, 0f);
+            
 // Move the enemy towards the player using the movement vector
-        transform.position += (Vector3)movement;
+            transform.position += (Vector3)movement;
+            // Debug.Log(transform.position);
 
-        // takeAStep(stepSize);
-        enemy.attack();
+            enemy.attack();
         
         }
 // if movement has swtiched sides the steps direction will too
@@ -96,7 +98,7 @@ public class EnemyMovement : MonoBehaviour
 // gets the starig postion of the enemy, and if its moving the postion will change and thus the anitmaion runs if its moving
         if (hasRunningAnimation)
         {
-            animator.SetBool("run", xDistance !=0);
+            animator.SetBool("run", xDistance != 0);
         }
 
         if (xDistance == attackRange || xDistance == attackRange)
