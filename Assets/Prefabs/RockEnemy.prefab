@@ -23,7 +23,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2543110427402068684
 Transform:
   m_ObjectHideFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   timer: 0
   attackSpeed: 5
   enemyHasDamagedAnimation: 1
+  isMeleeCombat: 0
 --- !u!114 &2543110427402068681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,9 +125,11 @@ MonoBehaviour:
   animator: {fileID: 2543110427402068663}
   attackPoint: {fileID: 2543110427594909565}
   attackRange: 2
+  canAttack: 0
   playerLayers:
     serializedVersion: 2
     m_Bits: 64
+  enemyDamage: 0
 --- !u!95 &2543110427402068663
 Animator:
   serializedVersion: 5
