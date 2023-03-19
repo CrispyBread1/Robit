@@ -214,6 +214,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1514903019}
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: attackRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732843385841423531, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6732843387028422337, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: m_Name
       value: TentacleEnemy
@@ -11479,6 +11491,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5904838866895970414, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904838867858868955, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
 --- !u!1 &285158393
@@ -18181,6 +18201,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1514903019}
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: attackRange
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732843385841423531, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6732843387028422337, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: m_Name
       value: TentacleEnemy (2)
@@ -19114,6 +19146,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1514903019}
+    - target: {fileID: 6732843385841423531, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6732843387028422337, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: m_Name
       value: TentacleEnemy (3)
@@ -19178,7 +19218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473482517}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19472,6 +19512,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1514903019}
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: attackRange
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732843385841423531, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6732843387028422337, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: m_Name
       value: TentacleEnemy (4)
@@ -57460,6 +57512,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2543110427402068686, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1514903019}
+    - target: {fileID: 2543110427402068686, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: attackRange
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
 --- !u!4 &1482041018 stripped
@@ -59469,6 +59529,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1514903019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5904838866895970414, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+  m_PrefabInstance: {fileID: 285133102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1517253798
 GameObject:
   m_ObjectHideFlags: 0
@@ -59608,6 +59673,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2543110427402068686, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1514903019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
 --- !u!4 &1519104955 stripped
@@ -59802,7 +59871,7 @@ GameObject:
   - component: {fileID: 1519514807}
   m_Layer: 0
   m_Name: Layer 5
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77003,9 +77072,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1514903019}
+    - target: {fileID: 1801960351, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: attackRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732843385841423531, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6732843387028422337, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: m_Name
       value: TentacleEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732843387028422346, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
+      propertyPath: enemyHasDamagedAnimation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6732843387028422349, guid: a5d25c16ad8a4408e9e4de4f84110138, type: 3}
       propertyPath: m_RootOrder
