@@ -45,13 +45,14 @@ GameObject:
   - component: {fileID: 6732843387028422346}
   - component: {fileID: 6732843387028422345}
   - component: {fileID: 6732843387028422390}
+  - component: {fileID: 1801960351}
   m_Layer: 3
   m_Name: TentacleEnemy
   m_TagString: EnemyHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6732843387028422349
 Transform:
   m_ObjectHideFlags: 0
@@ -152,15 +153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f60f7f4deb947368d8043aa66889ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  speed: 1
-  xDistance: 0
-  distanceChase: 5
   MaxHealth: 100
   CurrentHealth: 0
   timer: 0
   attackSpeed: 3
-  enemyCombat: {fileID: 6732843387028422390}
+  enemyHasDamagedAnimation: 0
 --- !u!60 &6732843387028422345
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -220,3 +217,24 @@ MonoBehaviour:
   playerLayers:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1801960351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6732843387028422337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7129ae1166f84462eaad1125ec9f1340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 2
+  xDistance: 0
+  distanceChase: 5
+  attackRange: 5
+  allowedToMove: 1
+  ScaleOfEnemy: 6
+  hasRunningAnimation: 0
+  startingPostionX: 0
