@@ -72,7 +72,7 @@ public class EnemyMovement : MonoBehaviour
         
         
         
-        if (xDistance < distanceChase && allowedToMove){
+        if (Mathf.Abs(xDistance) < distanceChase && allowedToMove){
             // Debug.Log("I am moving");
 // movement vector that only moves in the X directio
  // Move the enemy towards the player using the movement vector
