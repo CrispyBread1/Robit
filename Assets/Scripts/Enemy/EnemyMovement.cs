@@ -124,17 +124,17 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("collidingwith player");
             stopMoving();
         } 
+        Debug.Log("collidingwith player");
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollisionExit2D(Collision2D other)
     {   
         if ( other.gameObject.tag == "Player"){
         startMoving();
-        Debug.Log("enemy triggered");
         }
+        Debug.Log("enemy triggered");
     }
 
     
