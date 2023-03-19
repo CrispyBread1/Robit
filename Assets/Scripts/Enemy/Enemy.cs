@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
     {
         if (timer > attackSpeed)
         {
-            enemyCombat.attack();
+            // enemyCombat.attack();
             resetTimer();
         }
     }

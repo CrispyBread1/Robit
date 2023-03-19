@@ -440,6 +440,37 @@ Transform:
   m_Father: {fileID: 1220946255}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &343242531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343242532}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &343242532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343242531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.057, y: 0.255, z: 0.0025400876}
+  m_LocalScale: {x: 0.5387287, y: 0.5387287, z: 0.5387287}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1073193419}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &386567425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,6 +1359,9 @@ GameObject:
   - component: {fileID: 1073193418}
   - component: {fileID: 1073193421}
   - component: {fileID: 1073193420}
+  - component: {fileID: 1073193423}
+  - component: {fileID: 1073193422}
+  - component: {fileID: 1073193424}
   m_Layer: 3
   m_Name: FishEnemy
   m_TagString: EnemyHit
@@ -1395,10 +1429,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073193417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.19, y: -2.86, z: -8.246707}
-  m_LocalScale: {x: 8.700768, y: 8.700768, z: 8.700768}
+  m_LocalPosition: {x: 7.19, y: -1.31, z: -8.246707}
+  m_LocalScale: {x: 1.8562219, y: 1.8562219, z: 1.8562219}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 343242532}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1414,13 +1449,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7129ae1166f84462eaad1125ec9f1340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  speed: 0
+  player: {fileID: 1559127988}
+  speed: 2
   xDistance: 0
-  distanceChase: 0
+  distanceChase: 3
   attackRange: 0
-  ScaleOfEnemy: 0
-  hasRunningAnimation: 0
+  ScaleOfEnemy: 1.856222
+  hasRunningAnimation: 1
   startingPostionX: 0
 --- !u!114 &1073193421
 MonoBehaviour:
@@ -1437,8 +1472,62 @@ MonoBehaviour:
   MaxHealth: 100
   CurrentHealth: 0
   timer: 0
-  attackSpeed: 0
-  enemyHasDamagedAnimation: 0
+  attackSpeed: 3
+  enemyHasDamagedAnimation: 1
+--- !u!70 &1073193422
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073193417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.6, y: 1.5}
+  m_Direction: 0
+--- !u!95 &1073193423
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073193417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b16e1ebd0bf4b4933be84b417b4f9572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1073193424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073193417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79f66dde903643c9bc2317c30a0d3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1073193423}
+  attackPoint: {fileID: 343242532}
+  attackRange: 0.1
+  playerLayers:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1081360667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,7 +3007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2064513471
 Animator:
   serializedVersion: 5

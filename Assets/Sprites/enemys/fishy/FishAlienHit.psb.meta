@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2457bb1576a9049cdb39b0056e3ed685
+guid: d1efd47ff267a435d93d290f2292fc5c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,7 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: FishGunCharge4
+  - name: Layer 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,9 +102,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 48
-      height: 20
-    spriteID: 9a81d4cbba2414aa683e32befe1d62b3
+      width: 60
+      height: 150
+    spriteID: 94d88f6e976b048e9990f9ed7da7cf53
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,73 +114,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 51, y: 85}
-  - name: FishGunCharge3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 32
-      width: 48
-      height: 20
-    spriteID: 2e8fc8c88880b47e0b983d006498f144
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 32}
-    spritePosition: {x: 51, y: 85}
-  - name: FishGunCharge2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 60
-      width: 48
-      height: 20
-    spriteID: d7971271ebfe54d06acb6d8148ea985d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 60}
-    spritePosition: {x: 51, y: 85}
-  - name: FishGunCharge1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 88
-      width: 48
-      height: 20
-    spriteID: 58bf3b75aca0742548a95114429ebb17
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 88}
-    spritePosition: {x: 51, y: 85}
+    spritePosition: {x: 47, y: 0}
   characterData:
     bones: []
     parts: []
@@ -255,56 +189,16 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: FishGunCharge4
-    spriteName: FishGunCharge4
+  - name: Layer 1
+    spriteName: Layer 1
     isGroup: 0
     parentIndex: -1
-    spriteID: 9a81d4cbba2414aa683e32befe1d62b3
-    layerID: 56
+    spriteID: 94d88f6e976b048e9990f9ed7da7cf53
+    layerID: 57
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: FishGunCharge3
-    spriteName: FishGunCharge3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 2e8fc8c88880b47e0b983d006498f144
-    layerID: 55
-    mosaicPosition: {x: 4, y: 32}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: FishGunCharge2
-    spriteName: FishGunCharge2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: d7971271ebfe54d06acb6d8148ea985d
-    layerID: 54
-    mosaicPosition: {x: 4, y: 60}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: FishGunCharge1
-    spriteName: FishGunCharge1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 58bf3b75aca0742548a95114429ebb17
-    layerID: 53
-    mosaicPosition: {x: 4, y: 88}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: FishStartIdle1
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 7b6700695fd174e5cb9fb87613090d0d
-    layerID: 36
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
   generateGOHierarchy: 1
