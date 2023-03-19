@@ -1523,7 +1523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1073193418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1682,6 +1682,7 @@ MonoBehaviour:
   animator: {fileID: 1073193423}
   attackPoint: {fileID: 343242532}
   attackRange: 0.1
+  canAttack: 0
   playerLayers:
     serializedVersion: 2
     m_Bits: 64
@@ -3391,6 +3392,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2543110427402068662, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2543110427402068673, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2543110427402068673, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 2543110427402068684, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3439,6 +3452,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1559127988}
+    - target: {fileID: 2543110427402068686, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: attackRange
+      value: 0.0794
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
 --- !u!1001 &6732843386466315734
