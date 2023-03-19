@@ -1608,8 +1608,8 @@ MonoBehaviour:
   player: {fileID: 1559127988}
   speed: 2
   xDistance: 0
-  distanceChase: 3
-  attackRange: 0
+  distanceChase: 10
+  attackRange: 5
   allowedToMove: 1
   ScaleOfEnemy: 1.856222
   hasRunningAnimation: 1
