@@ -11158,7 +11158,6 @@ GameObject:
   - component: {fileID: 266568300}
   - component: {fileID: 266568299}
   - component: {fileID: 266568298}
-  - component: {fileID: 266568301}
   m_Layer: 5
   m_Name: Score Counter/Canvas
   m_TagString: Floor
@@ -11250,36 +11249,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 3
   m_TargetDisplay: 0
---- !u!60 &266568301
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266568296}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
 --- !u!1 &268353012
 GameObject:
   m_ObjectHideFlags: 0
@@ -65747,7 +65716,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5904838866895970403, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_RootOrder
@@ -86901,8 +86870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6911db416c2df4457970d0ebb4206f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  angle: 45
 --- !u!1 &2056470550
 GameObject:
   m_ObjectHideFlags: 0
