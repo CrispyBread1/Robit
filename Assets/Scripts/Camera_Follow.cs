@@ -7,7 +7,7 @@ public class Camera_Follow : MonoBehaviour
     // followspeed is the speed in which the camera follows
     public float FollowSpeed = 2f;
     //cameraYoffsetposition is a varibale used to adjust the camera height
-    public float cameraYoffsetposition = 2f;
+    [SerializeField]private float cameraYoffsetposition = 4f;
     // targer = player/character
     public Transform target;
 
