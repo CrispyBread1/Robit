@@ -11,6 +11,7 @@ public class Crystal : MonoBehaviour
     {
         if (crystal.gameObject.CompareTag("Crystal"))
         {   
+            
             Debug.Log("Crystal");
             // calls the changescore function in scoremanager and passes the crystal value to it
             ScoreManager.instance.ChangeScore(crystalValue);
