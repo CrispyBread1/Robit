@@ -55,17 +55,16 @@ public class EnemyCombat : MonoBehaviour
 
             hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
         
-        // foreach (Collider2D player in hitPlayers)
+        foreach (Collider2D player in hitPlayers)
 //damage them
-        // {
-            if (hitPlayers[0] = null)
-            {
-                hitPlayers[0].GetComponent<Player>().getHit(enemyDamage);
+        {
+            
+                player.GetComponent<Player>().getHit(enemyDamage);
                 canAttack = false;
-            }
             
             
-        // }
+            
+        }
         }
         
 
