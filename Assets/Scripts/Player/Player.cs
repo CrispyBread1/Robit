@@ -96,18 +96,6 @@ public class Player : MonoBehaviour
         playerHealth.takeDamage(damage);
     }
 
-// function to add the score of the crystal and destroy it 
-    public void OnTriggerEnter2D(Collider2D crystal)
-    {
-
-        // if (crystal.gameObject.CompareTag("Crystal"))
-        // {   
-        //     ScoreManager.instance.ChangeScore(crystalValue);
-        //     // StartCoroutine(DestroyCrystalAfterDelay(crystal.gameObject, 1.0f));
-        //     Destroy(crystal.gameObject);
-        // }
-
-    }
     // private IEnumerator DestroyCrystalAfterDelay(GameObject crystal, float delay)
     // {
     //     // Wait for the specified delay duration

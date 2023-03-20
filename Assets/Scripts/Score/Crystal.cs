@@ -6,6 +6,8 @@ public class Crystal : MonoBehaviour
 {
     public int crystalValue = 5;
 
+
+// function to add the score of the crystal and destroy it 
     public void OnTriggerEnter2D(Collider2D crystal)
     {
         if (crystal.gameObject.CompareTag("Player"))

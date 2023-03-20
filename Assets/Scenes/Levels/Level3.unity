@@ -2113,7 +2113,7 @@ PrefabInstance:
     - target: {fileID: 2850425216921629422, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 555464696}
     - target: {fileID: 2850425216921629422, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: attackRange
       value: 10
@@ -9749,7 +9749,7 @@ PrefabInstance:
     - target: {fileID: 2850425216921629422, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 555464696}
     - target: {fileID: 2850425216921629422, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: attackRange
       value: 10
@@ -21963,7 +21963,7 @@ PrefabInstance:
     - target: {fileID: 2850425216921629422, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 555464696}
     - target: {fileID: 2850425216921629422, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: attackRange
       value: 10
@@ -23547,6 +23547,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &555464696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5904838866895970414, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+  m_PrefabInstance: {fileID: 1589318805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &555982685
 GameObject:
   m_ObjectHideFlags: 0
@@ -49794,7 +49799,7 @@ PrefabInstance:
     - target: {fileID: 2850425216921629422, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 555464696}
     - target: {fileID: 2850425216921629422, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: attackRange
       value: 10
@@ -59777,7 +59782,7 @@ PrefabInstance:
     - target: {fileID: 2514564115060166198, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 555464696}
     - target: {fileID: 2514564115060166198, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: attackRange
       value: 5
@@ -62043,7 +62048,7 @@ PrefabInstance:
     - target: {fileID: 2514564115060166198, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 555464696}
     - target: {fileID: 2514564115060166198, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: attackRange
       value: 5
