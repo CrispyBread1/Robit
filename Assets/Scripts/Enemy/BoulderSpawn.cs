@@ -8,12 +8,9 @@ public class BoulderSpawn : MonoBehaviour
     [SerializeField] float secondBoulder;
     [SerializeField] float minTras;
     [SerializeField] float maxTras;
+    private playerHealth playerHealth;
 
-    [SerializeField] float timer;
-    [SerializeField] float minSpeed;
-    [SerializeField] float maxSpeed;
-    [SerializeField] float boulderSpeed = 0.5f;
-    [SerializeField] float boulderSpread = 0.5f;
+
 
     void Start()
     {
@@ -32,6 +29,19 @@ public class BoulderSpawn : MonoBehaviour
             Destroy(gameObject);
             
         }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            getHit(100);
+    }
+}
+    public void getHit(float damage)
+    {
+        Debug.Log(damage);
+        playerHealth.takeDamage(damage);
     }
 }
 

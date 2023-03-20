@@ -48,7 +48,6 @@ public class FishyGunFire : MonoBehaviour
         animator.SetTrigger("Fire");
         } 
 
-       
 // This flips the guns rotation so it is mirrored on each side of the enemy, depending on players positiion
         
 
