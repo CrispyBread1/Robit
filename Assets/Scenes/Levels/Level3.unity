@@ -2239,7 +2239,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &64236194
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8069,7 +8068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &213883910
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8876,7 +8874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &235703749
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10137,7 +10134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &259100908
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13510,7 +13506,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &328324116
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13647,7 +13642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &329315070
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18022,7 +18016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &448644164
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20680,7 +20673,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &502917091
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23903,7 +23895,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &578683936
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24982,7 +24973,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &604405579
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25203,7 +25193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &607215332
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25340,7 +25329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &610451766
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26559,7 +26547,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &655883153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34073,7 +34060,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &856782059
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -45446,7 +45432,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1118168125
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -50196,7 +50181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1238955991
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -56857,7 +56841,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1419678179
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -58056,7 +58039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1454727765
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -59361,7 +59343,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1496883127
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -62205,7 +62186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1545121031
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -63877,7 +63857,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1580412776
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -67086,7 +67065,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1654317986
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -68220,7 +68198,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1679176798
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -72442,6 +72419,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1802385631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1904931165032909001, guid: 897ef053a91c9490fa39b4f1db2a9e8b, type: 3}
+  m_PrefabInstance: {fileID: 1904931164644552726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1802385636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802385631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753ec39ca5e734836a6217a8cab1f9a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  megaCrystalValue: 15
 --- !u!1 &1803927297
 GameObject:
   m_ObjectHideFlags: 0
@@ -77377,7 +77372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &1890919691
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -85304,7 +85298,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystalValue: 5
-  megaCrystalValue: 15
 --- !u!60 &2073739917
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -87592,11 +87585,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1904931165032909044, guid: 897ef053a91c9490fa39b4f1db2a9e8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -136.3
+      value: 43.1
       objectReference: {fileID: 0}
     - target: {fileID: 1904931165032909044, guid: 897ef053a91c9490fa39b4f1db2a9e8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 63.8
+      value: -30.5
       objectReference: {fileID: 0}
     - target: {fileID: 1904931165032909044, guid: 897ef053a91c9490fa39b4f1db2a9e8b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -87630,7 +87623,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1873880156817004328, guid: 897ef053a91c9490fa39b4f1db2a9e8b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 897ef053a91c9490fa39b4f1db2a9e8b, type: 3}
 --- !u!1001 &3494123322639366558
 PrefabInstance:

@@ -100,12 +100,12 @@ public class Player : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D crystal)
     {
 
-        if (crystal.gameObject.CompareTag("Crystal"))
-        {   
-            ScoreManager.instance.ChangeScore(crystalValue);
-            // StartCoroutine(DestroyCrystalAfterDelay(crystal.gameObject, 1.0f));
-            Destroy(crystal.gameObject);
-        }
+        // if (crystal.gameObject.CompareTag("Crystal"))
+        // {   
+        //     ScoreManager.instance.ChangeScore(crystalValue);
+        //     // StartCoroutine(DestroyCrystalAfterDelay(crystal.gameObject, 1.0f));
+        //     Destroy(crystal.gameObject);
+        // }
 
     }
     // private IEnumerator DestroyCrystalAfterDelay(GameObject crystal, float delay)
