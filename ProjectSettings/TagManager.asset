@@ -11,8 +11,9 @@ TagManager:
   - Crystal
   - MegaCrystal
   - nextlevelscene
+  - Boulders
   - Boulder
-  - CaveBottom
+  - lava
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,12 @@ TagManager:
   m_SortingLayers:
   - name: background
     uniqueID: 3569979597
+    locked: 0
+  - name: insidelava
+    uniqueID: 4290171429
+    locked: 0
+  - name: lava
+    uniqueID: 1335127959
     locked: 0
   - name: platforms
     uniqueID: 2226931481
