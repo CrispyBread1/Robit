@@ -26,7 +26,7 @@ public class EnemyBulletScript : MonoBehaviour
 // used to find the position of the player
         Vector2 direction = player.transform.position - transform.position;
 // this gives the bullet (rb) behaviour 
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+        rb.velocity = new Vector2(direction.x, (direction.y + 1.5f)).normalized * force;
 
     }
 
