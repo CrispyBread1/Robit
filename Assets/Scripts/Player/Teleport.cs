@@ -7,7 +7,7 @@ public class Teleport : MonoBehaviour
 
 {   
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "bossportal"){
+        if (collision.gameObject.tag == "nextlevelscene"){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
