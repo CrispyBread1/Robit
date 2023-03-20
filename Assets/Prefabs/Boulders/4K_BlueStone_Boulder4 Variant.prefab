@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4K_BlueStone_Boulder4 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 119888, guid: 63ac97122145c9443b6282c5ae645b43, type: 3}
+      propertyPath: m_TagString
+      value: Boulders
+      objectReference: {fileID: 0}
     - target: {fileID: 434882, guid: 63ac97122145c9443b6282c5ae645b43, type: 3}
       propertyPath: m_RootOrder
       value: 0

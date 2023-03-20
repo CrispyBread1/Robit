@@ -33,9 +33,6 @@ public class BoulderSpawn : MonoBehaviour
             
         }
     }
-
-
-
 }
 
 //     public Transform spawnBoulder;
