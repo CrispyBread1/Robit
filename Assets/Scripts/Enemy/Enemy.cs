@@ -21,7 +21,6 @@ public class Enemy : MonoBehaviour
         CurrentHealth = MaxHealth;
     }
 
-    
     public void Update()
     {   
         if (isMeleeCombat)
@@ -30,7 +29,6 @@ public class Enemy : MonoBehaviour
         }
         
     }
-
 
 
     public void attack()
@@ -100,5 +98,5 @@ public class Enemy : MonoBehaviour
 
 
 // stops the enemy moving while dieing
-   
+
 }

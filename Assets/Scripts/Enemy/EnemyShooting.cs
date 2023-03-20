@@ -30,7 +30,6 @@ public class EnemyShooting : MonoBehaviour
         distance = Vector2.Distance(transform.position, player.transform.position);
 
 
-        
 
         if (distance < 5)
         {
