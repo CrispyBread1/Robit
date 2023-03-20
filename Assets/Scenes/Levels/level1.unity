@@ -1992,7 +1992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenu: {fileID: 1500479498}
-  PauseButton: {fileID: 0}
+  PauseButton: {fileID: 1966264627}
   canPause: 0
 --- !u!1 &804911017
 GameObject:
