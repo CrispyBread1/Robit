@@ -2140,6 +2140,7 @@ RectTransform:
   - {fileID: 2127483932}
   - {fileID: 1500479499}
   - {fileID: 1966264628}
+  - {fileID: 813483661}
   m_Father: {fileID: 840013296}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2298,11 +2299,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 793726490}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -383.5, y: 221.6}
+  m_AnchoredPosition: {x: -383.5, y: 299}
   m_SizeDelta: {x: 65.15, y: 12.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813483662
@@ -2921,10 +2922,10 @@ GameObject:
   - component: {fileID: 1073193419}
   - component: {fileID: 1073193418}
   - component: {fileID: 1073193421}
+  - component: {fileID: 1073193424}
   - component: {fileID: 1073193420}
   - component: {fileID: 1073193423}
   - component: {fileID: 1073193422}
-  - component: {fileID: 1073193424}
   m_Layer: 3
   m_Name: FishEnemy
   m_TagString: EnemyHit
@@ -2992,7 +2993,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073193417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.69, y: -1.31, z: -1}
+  m_LocalPosition: {x: 0.19, y: -1.31, z: -1}
   m_LocalScale: {x: 1.8562219, y: 1.8562219, z: 1.8562219}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5991,7 +5992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -385, y: 235}
+  m_AnchoredPosition: {x: -385, y: 268}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1966264629
@@ -6512,7 +6513,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -388, y: 208.7}
+  m_AnchoredPosition: {x: -388, y: 288}
   m_SizeDelta: {x: 101.06, y: 13.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2127483933

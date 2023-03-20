@@ -58,10 +58,13 @@ public class EnemyCombat : MonoBehaviour
         // foreach (Collider2D player in hitPlayers)
 //damage them
         // {
+            if (hitPlayers[0] = null)
+            {
+                hitPlayers[0].GetComponent<Player>().getHit(enemyDamage);
+                canAttack = false;
+            }
             
-            // Debug.Log(player);
-            hitPlayers[0].GetComponent<Player>().getHit(enemyDamage);
-            canAttack = false;
+            
         // }
         }
         
