@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Crystal
   - MegaCrystal
+  - bossportal
   layers:
   - Default
   - TransparentFX
