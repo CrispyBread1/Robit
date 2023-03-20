@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
     private void Update() {
 
-        Physics.gravity = new Vector3(0, -120f, 0);
+        Physics.gravity = new Vector3(0, 0, 0);
 
         float HorizontalInput = Input.GetAxis("Horizontal");
         playerBody.velocity = new Vector2(HorizontalInput * speed ,playerBody.velocity.y);
