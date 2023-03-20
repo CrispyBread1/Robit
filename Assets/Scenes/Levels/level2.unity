@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 6722627}
   - component: {fileID: 6722629}
   - component: {fileID: 6722628}
+  - component: {fileID: 6722630}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5996535503812752628, guid: efd782544d3154ff79f8f2e43de6717d, type: 3}
+  m_Sprite: {fileID: -7217329496971548193, guid: 88ad5321c6b9e4a098d96a47e63efba5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -199,6 +200,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6722626}
   m_CullTransparentMesh: 1
+--- !u!95 &6722630
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6722626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af827416208ff41a2b27ee5cc6d32298, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &18258486
 GameObject:
   m_ObjectHideFlags: 0
@@ -3937,11 +3958,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6449177914592160842, guid: 118a0268dc1784fa99e44227213207bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.84
+      value: 14.15
       objectReference: {fileID: 0}
     - target: {fileID: 6449177914592160842, guid: 118a0268dc1784fa99e44227213207bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.23
+      value: 7.92
       objectReference: {fileID: 0}
     - target: {fileID: 6449177914592160842, guid: 118a0268dc1784fa99e44227213207bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4005,7 +4026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6449177914592160949, guid: 118a0268dc1784fa99e44227213207bd, type: 3}
       propertyPath: orthographic size
-      value: 7.130301
+      value: 9.551859
       objectReference: {fileID: 0}
     - target: {fileID: 6449177914592160949, guid: 118a0268dc1784fa99e44227213207bd, type: 3}
       propertyPath: m_BackGroundColor.b
