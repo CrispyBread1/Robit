@@ -7,10 +7,20 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
- public void LoadGame()
- {
-   SceneManager.LoadScene(1);
- }
+  public void LoadLevelOne()
+  {
+    SceneManager.LoadScene(1);
+  }
+
+  public void LoadLevelTwo()
+  {
+    SceneManager.LoadScene(2);
+  }
+
+  public void LoadLevelThree()
+  {
+    SceneManager.LoadScene(3);
+  }
 
 
 }
