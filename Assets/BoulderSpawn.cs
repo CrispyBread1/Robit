@@ -6,7 +6,7 @@ public class BoulderSpawn : MonoBehaviour
 {
 
     public float speed = 10.00f;
-    public float angle = 45f;
+    public float angle = 45f; // The angle of the hill in degrees
     private Rigidbody2D rb;
 
 
@@ -14,7 +14,9 @@ public class BoulderSpawn : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(-speed, 0);
+        float rad = angle * Mathf.Deg2Rad; // Convert angle to radians
+        Vector2 direction = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad)); // Calculate direction vector
+        rb.velocity = direction * speed;
     }
 
     // Update is called once per frame
