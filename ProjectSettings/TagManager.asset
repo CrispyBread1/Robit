@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Wall
   - Crystal
+  - MegaCrystal
   layers:
   - Default
   - TransparentFX
