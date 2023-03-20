@@ -8,8 +8,9 @@ public class EnemyCombat : MonoBehaviour
     public Animator animator;
     public Transform attackPoint;
     public float attackRange = 0.5f;
-    // private bool canAttack;
+    public bool canAttack = false;
     public LayerMask playerLayers;
+    public int enemyDamage;
     
     Collider2D[] hitPlayers;
 
@@ -24,14 +25,14 @@ public class EnemyCombat : MonoBehaviour
 
     void Update()
     {
-        hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+       
         // Debug.Log(hitPlayers[0]);
     }
 
     
     public void attack()
     {
-        // canAttack = true;
+        canAttack = true;
         MeleeAttack();
     }
 
@@ -49,14 +50,21 @@ public class EnemyCombat : MonoBehaviour
             
         //     Debug.Log(hitPlayers[0] + "In the hit player");
         // }
-            
-        
-        Debug.Log(hitPlayers[0]);
-        foreach (Collider2D player in hitPlayers)
-//damage them
+        if (canAttack)
         {
-        player.GetComponent<Player>().getHit(25);
+
+            hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+        
+        // foreach (Collider2D player in hitPlayers)
+//damage them
+        // {
+            
+            // Debug.Log(player);
+            hitPlayers[0].GetComponent<Player>().getHit(enemyDamage);
+            canAttack = false;
+        // }
         }
+        
 
 
         

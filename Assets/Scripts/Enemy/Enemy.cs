@@ -12,21 +12,22 @@ public class Enemy : MonoBehaviour
     private  EnemyCombat enemyCombat;
     public bool enemyHasDamagedAnimation = false;
     private bool dead = false;
+    public bool isMeleeCombat;
     
     
     public void Start()
     {
-        
         enemyCombat = GetComponent<EnemyCombat>();
         CurrentHealth = MaxHealth;
-
     }
 
     
     public void Update()
     {   
-
+        if (isMeleeCombat)
+        {
         timer += Time.deltaTime;
+        }
         
     }
 
@@ -34,7 +35,7 @@ public class Enemy : MonoBehaviour
 
     public void attack()
     {
-        if (timer > attackSpeed)
+        if (timer > attackSpeed && isMeleeCombat)
         {
             enemyCombat.attack();
             resetTimer();
@@ -77,6 +78,12 @@ public class Enemy : MonoBehaviour
 
     public void enemyDie()
     {
+// destroys all child compoinenents of the enemy
+        while (transform.childCount > 0) {
+        DestroyImmediate(transform.GetChild(0).gameObject);
+        }
+
+// triggers the damaged animation but also sets the dead bool to true so the enemy goes through the damaged animation and then the death animation
         dead = true;
         enemyCombat.animator.SetBool("Dead", dead);
         enemyCombat.animator.SetTrigger("Damaged");

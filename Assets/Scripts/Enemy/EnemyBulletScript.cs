@@ -12,7 +12,7 @@ public class EnemyBulletScript : MonoBehaviour
     private Rigidbody2D rb;
     public float force;
     public float timer;
-    
+
 // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +27,7 @@ public class EnemyBulletScript : MonoBehaviour
         Vector2 direction = player.transform.position - transform.position;
 // this gives the bullet (rb) behaviour 
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+
     }
 
     // Update is called once per frame
@@ -48,11 +49,14 @@ public class EnemyBulletScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if(collision.gameObject.tag == "Player")
-        {
+        // if(collision.gameObject.tag == "Player")
+        // {
+            
             Destroy(gameObject);
+            
+            
 
-        }
+        // }
     }
     
 }

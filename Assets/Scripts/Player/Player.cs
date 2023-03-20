@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private playerHealth playerHealth;
     public int crystalValue = 5;
 
+    private int JumpAmount;
 
 
     private void Start() {
@@ -28,6 +29,8 @@ public class Player : MonoBehaviour
         playerBody = GetComponent<Rigidbody2D>();
         isGrounded = true;
         animator = GetComponent<Animator>();
+
+        JumpAmount = 1;
     }
 
     private void Update() {
@@ -45,7 +48,12 @@ public class Player : MonoBehaviour
         }
 
     // Jump -
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        // 
+
+
+
+        if (Input.GetKey(KeyCode.Space) && JumpAmount == 1)
+        // if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             Jump(); 
         }
@@ -59,6 +67,7 @@ public class Player : MonoBehaviour
     }
 
     private void Jump(){
+        JumpAmount = 0;
         GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
         isGrounded = false;
     }
@@ -69,7 +78,13 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "Floor" && isGrounded == false)
         {
+            JumpAmount = 1;
             isGrounded = true;
+        }
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            getHit(15);
         }
 
     // if collided with enemy pass through a certain value to take health down by

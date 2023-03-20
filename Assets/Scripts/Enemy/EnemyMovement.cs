@@ -18,18 +18,19 @@ public class EnemyMovement : MonoBehaviour
     // private bool inAttackRange = false;
     public float attackRange;
 
-    private bool allowedToMove = true;
+    public bool allowedToMove = true;
 
     public float ScaleOfEnemy;
 
     private Animator animator;
     public bool hasRunningAnimation;
-  
+
     private  EnemyCombat enemyCombat;
 
     public float startingPostionX;
 
     private Enemy enemy;
+
 
     
     void Start()
@@ -71,18 +72,20 @@ public class EnemyMovement : MonoBehaviour
         
         
         
-        if (xDistance < distanceChase && allowedToMove){
+        if (Mathf.Abs(xDistance) < distanceChase && allowedToMove){
+            // Debug.Log("I am moving");
 // movement vector that only moves in the X directio
  // Move the enemy towards the player using the movement vector
-        Vector2 movement = new Vector2(xMovement, 0f);
+            Vector2 movement = new Vector2(xMovement, 0f);
+            
 // Move the enemy towards the player using the movement vector
-        transform.position += (Vector3)movement;
+            transform.position += (Vector3)movement;
+            // Debug.Log(transform.position);
 
-        // takeAStep(stepSize);
-        enemy.attack();
+            // enemy.attack();
         
         }
-// if movemtn has swtich sides the steps direction will too
+// if movement has swtiched sides the steps direction will too
         if(xDistance <= 0.01f){
             transform.localScale = new Vector3(ScaleOfEnemy,ScaleOfEnemy,ScaleOfEnemy);
             // stepSize = stepSize * 1f;
@@ -95,18 +98,19 @@ public class EnemyMovement : MonoBehaviour
 // gets the starig postion of the enemy, and if its moving the postion will change and thus the anitmaion runs if its moving
         if (hasRunningAnimation)
         {
-            animator.SetBool("run", xDistance !=0);
+            animator.SetBool("run", xDistance != 0);
         }
 
-        if (xDistance == attackRange || xDistance == attackRange)
+        if (xDistance <= attackRange)
         {
-            enemyCombat.attack();
-            stopMoving();
+ // if the player is in attack range the attack conpnent is called in the enemy script, which then calls attack in enenym combat, however the enemy script has a timer so it doenst attack all at once.
+            enemy.attack();
+            // stopMoving();
         }
 
     }
 
-     public void stopMoving()
+    public void stopMoving()
     {
         allowedToMove = false;
     }
@@ -114,21 +118,26 @@ public class EnemyMovement : MonoBehaviour
     public void startMoving()
     {
         allowedToMove = true;
+        // Debug.Log("enemy moving");
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("collidingwith player");
             stopMoving();
         } 
+        // Debug.Log("collidingwith player");
     }
 
     public void OnCollisionExit2D(Collision2D other)
-    {
+    {   
+        if ( other.gameObject.tag == "Player"){
         startMoving();
+        }
+        // Debug.Log("enemy triggered");
     }
+
     
 
     
