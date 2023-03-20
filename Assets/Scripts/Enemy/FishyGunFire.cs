@@ -8,13 +8,13 @@ public class FishyGunFire : MonoBehaviour
     public Transform bulletPosition;
     public float timer;
     public float distance;
+    // public Enemy enemy;
     private GameObject player;
     public Animator animator;
     public float fireRate;
     public EnemyMovement enemyMovement;
     // public Enemy enemy;
 
-    // public GameObject player;
 
     private float rotationSpeed = 20f;
 
@@ -93,4 +93,16 @@ public class FishyGunFire : MonoBehaviour
         }
 
     }
+
+    private void stopMovingWhileFiring()
+    {
+        enemyMovement.stopMoving();
+    }
+
+    private void startMovingAfterFiring()
+    {
+        enemyMovement.startMoving();
+    }
+
+    
 }
