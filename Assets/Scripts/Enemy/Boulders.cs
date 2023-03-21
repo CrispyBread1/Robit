@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Boulders : MonoBehaviour
 {
-    public playerHealth playerHealth;
+    public GameObject playerHealth;
+    public Player player;
+    public playerHealth health;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-    
-    }
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        player = playerObj.GetComponent<Player>();
+        health = playerObj.GetComponent<playerHealth>();
+}
+
 
     // Update is called once per frame
         public void OnCollisionEnter2D(Collision2D collision)
@@ -25,7 +31,7 @@ public class Boulders : MonoBehaviour
     public void getHit(float damage)
     {
         Debug.Log(damage);
-        playerHealth.takeDamage(damage);
+        health.takeDamage(damage);
     }
 }
 
