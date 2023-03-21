@@ -12,6 +12,7 @@ public class FishyGunFire : MonoBehaviour
     private GameObject player;
     public Animator animator;
     public float fireRate;
+    public float attackRange = 10f;
     public EnemyMovement enemyMovement;
     // public Enemy enemy;
 
@@ -42,7 +43,7 @@ public class FishyGunFire : MonoBehaviour
         timer += Time.deltaTime;
 
 // if timer is more than 2 seconds then timer will reet to 0
-        if( timer > fireRate && enemyMovement.attackRange >= distance)
+        if( timer > fireRate && attackRange >= distance)
         {
         timer = 0;
         animator.SetTrigger("Fire");
@@ -103,5 +104,5 @@ public class FishyGunFire : MonoBehaviour
         enemyMovement.startMoving();
     }
 
-    
+
 }
