@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
 
     public void start()
     {
-        
+    
     }
 
     public void Update()
@@ -39,8 +39,7 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         // gameOverScreen = new GameObject();
         // DeathScreen.SetActive(true);
-
-    }
+}
 
     public void pauseGame()
     {
@@ -48,7 +47,6 @@ public class LevelManager : MonoBehaviour
         PauseMenu.SetActive(true);  
         PauseButton.SetActive(false);
         Time.timeScale = 0;     
-         
     }
 
     public void unPauseGame()

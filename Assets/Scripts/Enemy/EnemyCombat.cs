@@ -52,20 +52,18 @@ public class EnemyCombat : MonoBehaviour
             
         //     Debug.Log(hitPlayers[0] + "In the hit player");
         // }
+
         if (canAttack)
         {
-
+            // Unity method used to find all the colliders that overlap with a circular area in 2D space.
             hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
         
         foreach (Collider2D player in hitPlayers)
-//damage them
+
         {
-            
+                //damage them
                 player.GetComponent<Player>().getHit(enemyDamage);
                 canAttack = false;
-            
-            
-            
         }
         }
         

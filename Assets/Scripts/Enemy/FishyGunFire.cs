@@ -54,8 +54,6 @@ public class FishyGunFire : MonoBehaviour
 
         // Quaternion rotation = Quaternion.LookRotation (player.transform.position - transform.position, transform.TransformDirection(Vector3.up));
         // transform.rotation = new Quaternion(0, 0, 0, rotation.w);
-
-        
     }
 
     private void changeGunDirection()
@@ -91,8 +89,7 @@ public class FishyGunFire : MonoBehaviour
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
             transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * rotationSpeed);
         }
-
-    }
+}
 
     private void stopMovingWhileFiring()
     {

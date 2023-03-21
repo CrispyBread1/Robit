@@ -108,7 +108,6 @@ public class EnemyMovement : MonoBehaviour
             enemy.attack();
             // stopMoving();
         }
-
     }
 
     public void stopMoving()

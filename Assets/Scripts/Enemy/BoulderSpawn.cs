@@ -16,6 +16,7 @@ public class BoulderSpawn : MonoBehaviour
         StartCoroutine(BoulderSpawns());
     }
 
+    // IEnumerator is a coroutine (coroutine is a function that allows you to pause an execition and pick it back up at any poit) that runs the code while true
     IEnumerator BoulderSpawns()
     {
         while (true)
@@ -37,42 +38,4 @@ public class BoulderSpawn : MonoBehaviour
     }
 }
 
-
-
-//     public Transform spawnBoulder;
-//     public GameObject boulder;
-//     public bool isTimer;
-//     public float timeToSpawn;
-//     private float currentTimeToSpawn;
-
-
-//     // Start is called before the first frame update
-//     void Start()
-//     {
-//         currentTimeToSpawn = timeToSpawn;
-//     }
-
-//     // Update is called once per frame
-//     void Update()
-//     {   
-//         if(isTimer){
-//         UpdateTimer();
-//         }
-//     }
-
-//     public void UpdateTimer()
-//     {
-//         if(currentTimeToSpawn > 0){
-//             currentTimeToSpawn -= Time.deltaTime;
-//         }
-//         else {
-//             SpawnObject();
-//             currentTimeToSpawn = timeToSpawn;
-//         }
-//     }
-
-//     public void SpawnObject(){
-//         Instantiate(boulder, transform.position, transform.rotation);
-//     }
-// }
 

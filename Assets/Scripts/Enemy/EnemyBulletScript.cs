@@ -21,7 +21,7 @@ public class EnemyBulletScript : MonoBehaviour
 //used to give the coordinates of the player
         player = GameObject.FindGameObjectWithTag("Player");
 
-        
+
 
 // used to find the position of the player
         Vector2 direction = player.transform.position - transform.position;
@@ -53,10 +53,6 @@ public class EnemyBulletScript : MonoBehaviour
         // {
             
             Destroy(gameObject);
-            
-            
-
-        // }
     }
     
 }

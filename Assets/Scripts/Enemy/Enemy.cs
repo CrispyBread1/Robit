@@ -95,8 +95,4 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-
-
-// stops the enemy moving while dieing
-
 }

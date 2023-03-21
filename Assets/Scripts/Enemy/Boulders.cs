@@ -12,9 +12,12 @@ public class Boulders : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        // find teh player object which is tagged Player
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        // get player script
         player = playerObj.GetComponent<Player>();
+        // get playerHealth script
         health = playerObj.GetComponent<playerHealth>();
 }
 

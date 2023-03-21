@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     private Animator animator;
     private playerHealth playerHealth;
     public int crystalValue = 5;
-
     private int JumpAmount;
 
 
@@ -48,10 +47,6 @@ public class Player : MonoBehaviour
         }
 
     // Jump -
-        // 
-
-
-
         if (Input.GetKey(KeyCode.Space) && JumpAmount == 1)
         // if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
