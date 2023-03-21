@@ -1079,6 +1079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 578800324}
+  - component: {fileID: 578800325}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -1103,6 +1104,32 @@ Transform:
   m_Father: {fileID: 1953195327}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &578800325
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578800323}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 9.345703, y: 7.0274296}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.6438904, y: 11.956966}
+  m_EdgeRadius: 0
 --- !u!1 &629120982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,6 +2074,7 @@ GameObject:
   - component: {fileID: 926308216}
   - component: {fileID: 926308215}
   - component: {fileID: 926308217}
+  - component: {fileID: 926308218}
   m_Layer: 0
   m_Name: Treadmill
   m_TagString: Untagged
@@ -2164,6 +2192,32 @@ MonoBehaviour:
   rock: {fileID: 4979226297713076001, guid: 6c2e33384586e438bb9f3d0a0be61448, type: 3}
   playerInRange: 20
   fishRockMonsterCreator: {fileID: 1169990720}
+--- !u!61 &926308218
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926308213}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.78, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 1, y: 0.5}
+    oldSize: {x: 1.56, y: 0.54}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.56, y: 0.54}
+  m_EdgeRadius: 0
 --- !u!1 &954550501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5279,6 +5333,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4391475174916015618, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -746556505764347403, guid: d144979919aca4c1a8ec7a71948e473b, type: 3}
     - target: {fileID: 4391475174916015619, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5331,6 +5389,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1559127988}
+    - target: {fileID: 4391475174916015628, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
+      propertyPath: enemyHasDamagedAnimation
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
 --- !u!1001 &4979226297029070371
@@ -5476,11 +5538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 145.1
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.7
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.z
