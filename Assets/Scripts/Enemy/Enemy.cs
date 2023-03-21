@@ -77,14 +77,17 @@ public class Enemy : MonoBehaviour
     public void enemyDie()
     {
 // destroys all child compoinenents of the enemy
-        while (transform.childCount > 0) {
+        while (transform.childCount > 0) 
+        {
         DestroyImmediate(transform.GetChild(0).gameObject);
-        }
+        }    
 
 // triggers the damaged animation but also sets the dead bool to true so the enemy goes through the damaged animation and then the death animation
         dead = true;
         enemyCombat.animator.SetBool("Dead", dead);
         enemyCombat.animator.SetTrigger("Damaged");
+
+        
     }
 
 

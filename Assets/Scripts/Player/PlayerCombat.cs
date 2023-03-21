@@ -46,7 +46,7 @@ public class PlayerCombat : MonoBehaviour
 // detect enemies in range of attack
 // this adda an invisible sphere around our attack point and it will give it a range we decide             
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
+            // Debug.Log(hitEnemies[0]);
             foreach (Collider2D enemy in hitEnemies)
 //damage them
             {
