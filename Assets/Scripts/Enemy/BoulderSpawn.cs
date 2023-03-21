@@ -14,6 +14,9 @@ public class BoulderSpawn : MonoBehaviour
     void Start()
     {
         StartCoroutine(BoulderSpawns());
+
+        // minTras -= transform.position.x;
+        // maxTras -= transform.position.x;
     }
 
     // IEnumerator is a coroutine (coroutine is a function that allows you to pause an execition and pick it back up at any poit) that runs the code while true
@@ -23,6 +26,7 @@ public class BoulderSpawn : MonoBehaviour
         {   
             // creates a random float between minTras and maxTras and sets to wanted
             var wanted = Random.Range(minTras, maxTras);
+            Debug.Log(wanted);
             // creates a new vector3 of where the boulder will spawn
             var position = new Vector3(wanted, transform.position.y);
             // this creates a new object based on the boulder prefab, it generates a random boulder from the boulder list

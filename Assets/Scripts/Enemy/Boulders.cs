@@ -27,7 +27,7 @@ public class Boulders : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            getHit(100);
+            getHit(50);
             Debug.Log("collided");
     }
 }
