@@ -95,6 +95,14 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "lava"){
             getHit(50);
         }
+        if (collision.gameObject.tag == "Spikes")
+        {
+            getHit(100);
+        }
+        if (collision.gameObject.tag == "FallingSpike")
+        {
+            getHit(50);
+        }
 
     // if collided with enemy pass through a certain value to take health down by
     }
