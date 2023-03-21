@@ -42,6 +42,6 @@ public class Conveyorbelt : MonoBehaviour
     public void spawnRock()
     {
         Instantiate(rock, rockSpawnPostion.position, Quaternion.identity);
-        fishRockMonsterCreator.findRock();
+        fishRockMonsterCreator.fire();
     }
 }
