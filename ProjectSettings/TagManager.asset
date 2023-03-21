@@ -15,6 +15,9 @@ TagManager:
   - Boulder
   - lava
   - Rock
+  - PlayerAttackPoint
+  - GameOverScreen
+  - HealthBar
   layers:
   - Default
   - TransparentFX

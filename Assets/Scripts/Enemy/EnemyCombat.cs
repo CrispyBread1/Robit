@@ -19,6 +19,8 @@ public class EnemyCombat : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
+        attackPoint = transform.Find("AttackPoint");
 
     }
 
