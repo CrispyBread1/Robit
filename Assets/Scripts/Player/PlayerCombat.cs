@@ -10,6 +10,9 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
     private bool canAttack;
     public LayerMask enemyLayers;
+    public bool wontAttack = true;
+    public float attackSpeed = 1f;
+    public float timer;
 
 
     
@@ -24,25 +27,31 @@ public class PlayerCombat : MonoBehaviour
 // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {   
 
-            canAttack = true;
-            MeleeAttack();
+        timer += Time.deltaTime;
+        
+            if (Input.GetKeyDown(KeyCode.J))
+            {   
 
-            
-        }
+                canAttack = true;
+                MeleeAttack();
+
+                
+            }
+        
         
     }
 
     private void MeleeAttack()
     {
 //Play an attack animation
-        if(canAttack)
+        if(canAttack && timer >= attackSpeed)
         {
-            animator.SetTrigger("attack");
+
             canAttack = false;
+            animator.SetTrigger("attack");
             
+            timer = 0;
 // detect enemies in range of attack
 // this adda an invisible sphere around our attack point and it will give it a range we decide             
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
@@ -63,6 +72,16 @@ public class PlayerCombat : MonoBehaviour
         }
         Gizmos.DrawSphere(attackPoint.position, attackRange);
     }
+
+    // private void allowAttack()
+    // {
+    //     wontAttack = true;
+    // }
+
+    // private void cantAttack()
+    // {
+    //     wontAttack = false;
+    // }
 
 
 }

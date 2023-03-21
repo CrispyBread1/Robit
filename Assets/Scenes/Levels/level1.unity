@@ -5524,6 +5524,10 @@ PrefabInstance:
       propertyPath: DeathScreen
       value: 
       objectReference: {fileID: 2053956063}
+    - target: {fileID: 5904838866895970407, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+      propertyPath: attackSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_RootOrder
       value: 1
