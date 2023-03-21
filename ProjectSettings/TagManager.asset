@@ -18,6 +18,7 @@ TagManager:
   - PlayerAttackPoint
   - GameOverScreen
   - HealthBar
+  - ladder
   layers:
   - Default
   - TransparentFX
@@ -63,6 +64,9 @@ TagManager:
     locked: 0
   - name: platforms
     uniqueID: 2226931481
+    locked: 0
+  - name: ladder
+    uniqueID: 3536992675
     locked: 0
   - name: Default
     uniqueID: 0
