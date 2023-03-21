@@ -5523,10 +5523,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 840013296}
     m_Modifications:
-    - target: {fileID: 6028575163325328107, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
-      propertyPath: m_TagString
-      value: GameOverScreen
-      objectReference: {fileID: 0}
     - target: {fileID: 6028575164044412194, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_Name
       value: Canvas/LevelManager
@@ -5618,10 +5614,6 @@ PrefabInstance:
     - target: {fileID: 6028575164044412206, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9131173111191591318, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
-      propertyPath: m_TagString
-      value: HealthBar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
