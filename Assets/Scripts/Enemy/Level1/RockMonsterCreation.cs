@@ -18,7 +18,7 @@ public class RockMonsterCreation : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            // Instantiate(rockMonster, bulletPosition.position, Quaternion.identity);
+            Instantiate(rockMonster, transform.position, Quaternion.identity);
 
             Destroy(gameObject);
         }
