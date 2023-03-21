@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject PauseButton;
 
-    public bool canPause = false;
+    private bool canPause = false;
 
     public void start()
     {
@@ -18,19 +18,19 @@ public class LevelManager : MonoBehaviour
     public void Update()
     {
 // pause menu coming up
-        if(Input.GetKey(KeyCode.Escape) && canPause)
-        {
-            pauseGame();
-            canPause = false;
+        // if(Input.GetKey(KeyCode.Escape) && canPause)
+        // {
+        //     pauseGame();
+        //     canPause = false;
 
-        }
+        // }
 
-        if(Input.GetKey(KeyCode.Escape) && !canPause)
-        {
-            unPauseGame();
-            canPause = true;
+        // if(Input.GetKey(KeyCode.Escape) && !canPause)
+        // {
+        //     unPauseGame();
+        //     canPause = true;
             
-        }
+        // }
 
     }
 
@@ -46,6 +46,7 @@ public class LevelManager : MonoBehaviour
     
         PauseMenu.SetActive(true);  
         PauseButton.SetActive(false);
+        // pauses whole game 
         Time.timeScale = 0;     
     }
 
@@ -54,6 +55,7 @@ public class LevelManager : MonoBehaviour
         
         PauseMenu.SetActive(false); 
         PauseButton.SetActive(true);
+        //starts game again
         Time.timeScale = 1;
     }
 
