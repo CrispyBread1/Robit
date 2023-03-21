@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 5904838866895970401}
   - component: {fileID: 5904838866895970406}
   - component: {fileID: 5904838866895970407}
-  m_Layer: 0
+  - component: {fileID: 6308926972890748906}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -31,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5904838866895970414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 0.09, z: -0.5}
+  m_LocalPosition: {x: 150.86, y: 37.1, z: -0.5}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -105,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9
   jumpSpeed: 20
+  crystalValue: 5
 --- !u!61 &5904838866895970400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -207,6 +209,21 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &6308926972890748906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904838866895970414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb53e30b396f4d72bfacbb7e0a3182b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 0}
+  PauseButton: {fileID: 0}
+  canPause: 0
 --- !u!1 &5904838867858868955
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5904838867858868952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5904838867858868955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.214, y: 0.233, z: 0}
+  m_LocalPosition: {x: 0.244, y: 0.171, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
