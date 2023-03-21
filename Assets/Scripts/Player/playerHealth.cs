@@ -9,6 +9,7 @@ public class playerHealth : MonoBehaviour
     [SerializeField]private float maxHealth;
     public GameObject DeathScreen;
     public Image healthbar;
+    public Animator animator;
 
     private Player player;
 
@@ -21,6 +22,7 @@ public class playerHealth : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         maxHealth = health;
         // DeathScreen = GameObject.FindGameObjectWithTag("GameOverScreen");
         player = GetComponent<Player>();
@@ -37,6 +39,7 @@ public class playerHealth : MonoBehaviour
 // player takes damage
     public void takeDamage(float takeDamage)
     {  
+        animator.SetTrigger("Damaged");
         // Debug.Log("i am in takeDagame functuion in playerHealth");
         if(health <= 0){
             die();
