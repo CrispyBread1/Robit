@@ -8804,6 +8804,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 3656789966918202089, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 4075295403901154971, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -17033,6 +17037,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 3656789966918202089, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 4075295403901154971, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -27142,6 +27150,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4432099313879203765, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 5335210641930005373, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
       propertyPath: m_Name
       value: FishEnemy
@@ -31812,6 +31824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 3656789966918202089, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 4075295403901154971, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -33103,6 +33119,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 3656789966918202089, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 4075295403901154971, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -42365,6 +42385,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4432099313879203765, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 5335210641930005373, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
       propertyPath: m_Name
       value: FishEnemy (1)
@@ -43310,6 +43334,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2206791000057450034, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 9171698371786461268, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: m_Name
       value: RockEnemy
@@ -55863,6 +55891,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2206791000057450034, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 9171698371786461268, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: m_Name
       value: RockEnemy (2)
@@ -57133,6 +57165,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2206791000057450034, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 9171698371786461268, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: m_Name
       value: RockEnemy (1)
@@ -66240,6 +66276,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+--- !u!1 &1589318806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5904838866895970414, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+  m_PrefabInstance: {fileID: 1589318805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1596138009
 GameObject:
   m_ObjectHideFlags: 0
@@ -67527,6 +67568,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 3656789966918202089, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 4075295403901154971, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -89095,6 +89140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473482517}
     m_Modifications:
+    - target: {fileID: 3656789966918202089, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589318806}
     - target: {fileID: 4075295403901154971, guid: 878ba7d55a9364f64814eb5cf400f161, type: 3}
       propertyPath: m_RootOrder
       value: 4
