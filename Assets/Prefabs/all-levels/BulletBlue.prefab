@@ -148,4 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 2
   timer: 0
-  aim: {fileID: 0}
+  aim: {x: 0, y: 0}

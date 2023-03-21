@@ -22,6 +22,7 @@ public class Conveyorbelt : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        // rockSpawnPostion.transform = -10f;
     }
 
     // Update is called once per frame
