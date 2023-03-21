@@ -28,8 +28,8 @@ public class Spikes : MonoBehaviour
     void Update()
     {
 
-        // distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-        distanceToPlayer =  transform.position.x - player.transform.position.x;
+        distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+        // distanceToPlayer =  transform.position - player.transform.position;
 
         // Debug.Log(distanceToPlayer);
 
