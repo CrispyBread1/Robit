@@ -18,8 +18,9 @@ public class RockMonsterCreation : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            Instantiate(rockMonster, transform.position, Quaternion.identity);
-
+            rockMonster = Instantiate(rockMonster, transform.position, Quaternion.identity);
+            rockMonster.GetComponent<Animator>().SetTrigger("Spawned");
+            Debug.Log(rockMonster.GetComponent<Animator>());
             Destroy(gameObject);
         }
         
