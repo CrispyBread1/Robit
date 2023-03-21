@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class RockMonsterCreation : MonoBehaviour
 {
+
+    public GameObject rockMonster;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +18,9 @@ public class RockMonsterCreation : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-        Destroy(gameObject);
+            // Instantiate(rockMonster, bulletPosition.position, Quaternion.identity);
+
+            Destroy(gameObject);
         }
         
     }
