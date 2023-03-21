@@ -86,6 +86,9 @@ public class Player : MonoBehaviour
         {
             getHit(15);
         }
+        if (collision.gameObject.tag == "lava"){
+            getHit(50);
+        }
 
     // if collided with enemy pass through a certain value to take health down by
     }
