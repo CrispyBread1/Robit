@@ -19,10 +19,11 @@ public class BlueBullet : MonoBehaviour
         aim.x = 153.23f;
         aim.y = 37f;
 
-        
+        aim.x -= transform.position.x;
+        aim.y -= transform.position.y;
         
 // this gives the bullet (rb) behaviour 
-        rb.velocity = new Vector2(aim.x, (aim.y + 0.5f)).normalized * force;
+        rb.velocity = new Vector2(aim.x, aim.y).normalized * force;
 
     }
 
