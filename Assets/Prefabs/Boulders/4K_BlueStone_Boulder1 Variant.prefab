@@ -11,9 +11,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4K_BlueStone_Boulder1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 152078, guid: 3b85267f7572b0f46b12dadccdc4fea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 445728, guid: 3b85267f7572b0f46b12dadccdc4fea5, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445728, guid: 3b85267f7572b0f46b12dadccdc4fea5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 445728, guid: 3b85267f7572b0f46b12dadccdc4fea5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 445728, guid: 3b85267f7572b0f46b12dadccdc4fea5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 445728, guid: 3b85267f7572b0f46b12dadccdc4fea5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,6 +78,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 152078, guid: 3b85267f7572b0f46b12dadccdc4fea5, type: 3}
   m_PrefabInstance: {fileID: 16643057160941493}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &5127976269313037793
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16643057161059771}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 3
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!60 &-8441421965179929340
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -92,3 +129,16 @@ PolygonCollider2D:
       - {x: -0.23116182, y: -0.2881024}
       - {x: 0.18344279, y: -0.2881024}
       - {x: 0.3115626, y: 0.106210046}
+--- !u!114 &4034701521843044649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16643057161059771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471ef6d257e9b40bcb39bab58aceb64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 0}

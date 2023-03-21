@@ -20,6 +20,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 434882, guid: 63ac97122145c9443b6282c5ae645b43, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 434882, guid: 63ac97122145c9443b6282c5ae645b43, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 434882, guid: 63ac97122145c9443b6282c5ae645b43, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 434882, guid: 63ac97122145c9443b6282c5ae645b43, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3730001
       objectReference: {fileID: 0}
@@ -66,6 +78,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 119888, guid: 63ac97122145c9443b6282c5ae645b43, type: 3}
   m_PrefabInstance: {fileID: 5520835815395489454}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &6319233252207339642
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5520835815395500798}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 3
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!60 &-7217358461653481247
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -96,3 +129,16 @@ PolygonCollider2D:
       - {x: -0.23322164, y: -0.32100213}
       - {x: 0.23322171, y: -0.32100207}
       - {x: 0.37736058, y: 0.12261194}
+--- !u!114 &-3029962251785168023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5520835815395500798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471ef6d257e9b40bcb39bab58aceb64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 0}
