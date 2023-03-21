@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 77823665}
   m_Layer: 0
   m_Name: Spike (10)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -465,7 +465,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &77823663
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -566,6 +566,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &157916414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,7 +1315,7 @@ GameObject:
   - component: {fileID: 261175776}
   m_Layer: 0
   m_Name: Spike (3)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1354,7 +1355,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &261175774
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1455,6 +1456,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &310978874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,7 +2942,7 @@ GameObject:
   - component: {fileID: 783033757}
   m_Layer: 0
   m_Name: Spike (5)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2980,7 +2982,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &783033755
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3081,6 +3083,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!224 &793726490 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6028575164044412206, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
@@ -3185,7 +3188,7 @@ GameObject:
   - component: {fileID: 821715863}
   m_Layer: 0
   m_Name: Spike (2)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3225,7 +3228,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &821715861
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3326,6 +3329,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &840013295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4459,6 +4463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1158947056}
   - component: {fileID: 1158947057}
+  - component: {fileID: 1158947058}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Floor
@@ -4513,6 +4518,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25.612778, y: 2.3385875}
   m_EdgeRadius: 0
+--- !u!114 &1158947058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158947055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924af53d3c188407f98fa874ece4a49b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1169990715
 GameObject:
   m_ObjectHideFlags: 0
@@ -6120,7 +6137,7 @@ GameObject:
   - component: {fileID: 1529937209}
   m_Layer: 0
   m_Name: Spike (9)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6160,7 +6177,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &1529937207
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6261,6 +6278,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &1559127988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5904838866895970414, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
@@ -6867,7 +6885,7 @@ GameObject:
   - component: {fileID: 1699625703}
   m_Layer: 0
   m_Name: Spike (4)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6907,7 +6925,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &1699625701
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7008,6 +7026,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &1706415004
 GameObject:
   m_ObjectHideFlags: 0
@@ -7023,7 +7042,7 @@ GameObject:
   - component: {fileID: 1706415009}
   m_Layer: 0
   m_Name: Spike (8)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7063,7 +7082,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &1706415007
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7164,6 +7183,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &1724924022
 GameObject:
   m_ObjectHideFlags: 0
@@ -7688,7 +7708,7 @@ GameObject:
   - component: {fileID: 1798880484}
   m_Layer: 0
   m_Name: Spike
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7728,7 +7748,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &1798880481
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7860,6 +7880,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &1819094669
 GameObject:
   m_ObjectHideFlags: 0
@@ -8043,7 +8064,7 @@ GameObject:
   - component: {fileID: 1843460799}
   m_Layer: 0
   m_Name: Spike (7)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8083,7 +8104,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &1843460797
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8184,6 +8205,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &1843470211
 GameObject:
   m_ObjectHideFlags: 0
@@ -8457,7 +8479,7 @@ GameObject:
   - component: {fileID: 1915334585}
   m_Layer: 0
   m_Name: Spike (6)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8497,7 +8519,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &1915334583
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8598,6 +8620,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &1920139683
 GameObject:
   m_ObjectHideFlags: 0
@@ -9350,7 +9373,7 @@ GameObject:
   - component: {fileID: 2099165293}
   m_Layer: 0
   m_Name: Spike (11)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9390,7 +9413,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &2099165291
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9491,6 +9514,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1 &2113907218
 GameObject:
   m_ObjectHideFlags: 0
@@ -9590,7 +9614,7 @@ GameObject:
   - component: {fileID: 2134180085}
   m_Layer: 0
   m_Name: Spike (1)
-  m_TagString: Untagged
+  m_TagString: FallingSpike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9630,7 +9654,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &2134180083
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9731,6 +9755,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   playerInRange: 0
   randomDropTime: 0
+  collide: {fileID: 0}
 --- !u!1001 &1652021024144819640
 PrefabInstance:
   m_ObjectHideFlags: 0
