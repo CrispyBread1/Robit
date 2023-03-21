@@ -22,6 +22,9 @@ public class playerHealth : MonoBehaviour
     private void Start()
     {
         maxHealth = health;
+        // DeathScreen = GameObject.FindGameObjectWithTag("GameOverScreen");
+        player = GetComponent<Player>();
+        // healthbar = GetComponent<Image>();
     }
 
     public void update()

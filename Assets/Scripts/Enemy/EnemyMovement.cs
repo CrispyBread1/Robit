@@ -36,7 +36,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
 
-        // player = GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player");
         enemy = GetComponent<Enemy>();
         enemyCombat = GetComponent<EnemyCombat>();
         // stepSize = ScaleOfEnemy / 10;

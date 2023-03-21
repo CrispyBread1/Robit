@@ -16,7 +16,9 @@ public class PlayerCombat : MonoBehaviour
 // Start is called before the first frame update
     void Start()
     {
-
+        animator = GetComponent<Animator>();
+        attackPoint = GameObject.FindGameObjectWithTag("PlayerAttackPoint").transform;
+        
     }
 
 // Update is called once per frame

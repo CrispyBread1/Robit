@@ -3943,11 +3943,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1500479498 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9131173110785696879, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
-  m_PrefabInstance: {fileID: 9131173111735346277}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1559127988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5904838866895970414, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
@@ -5472,11 +5467,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 150.86
+      value: 16.3
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.1
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5514,11 +5509,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6308926972890748906, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
-      propertyPath: PauseMenu
-      value: 
-      objectReference: {fileID: 1500479498}
-    m_RemovedComponents: []
+    - target: {fileID: 5904838867858868955, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+      propertyPath: m_TagString
+      value: PlayerAttackPoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
 --- !u!1001 &9131173111735346277
 PrefabInstance:
@@ -5527,6 +5523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 840013296}
     m_Modifications:
+    - target: {fileID: 6028575163325328107, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_TagString
+      value: GameOverScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 6028575164044412194, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_Name
       value: Canvas/LevelManager
@@ -5618,6 +5618,10 @@ PrefabInstance:
     - target: {fileID: 6028575164044412206, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131173111191591318, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_TagString
+      value: HealthBar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
