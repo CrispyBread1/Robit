@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
 
     public void getHit(float damage)
     {
-        // Debug.Log(damage);
+        Debug.Log(damage);
         playerHealth.takeDamage(damage);
     }
 
