@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     public bool isMeleeCombat;
     
     
+    
     public void Start()
     {
         enemyCombat = GetComponent<EnemyCombat>();
@@ -52,22 +53,25 @@ public class Enemy : MonoBehaviour
 // enemy takes damage
     public void takeDamage(int damage)
     {
-        if (CurrentHealth > 0)
+        if(!dead)
         {
-            if(enemyHasDamagedAnimation)
+            if (CurrentHealth > 0)
             {
-                enemyCombat.animator.SetTrigger("Damaged");
-            }
+                if(enemyHasDamagedAnimation)
+                {
+                    enemyCombat.animator.SetTrigger("Damaged");
+                }
 
-            CurrentHealth -= damage;
-            if (CurrentHealth <= 0)
+                CurrentHealth -= damage;
+                if (CurrentHealth <= 0)
+                {
+                    enemyDie();                
+                }
+            } else
             {
-                enemyDie();                
+                // enemy has no health so dies
+                enemyDie();
             }
-        } else
-        {
-            // enemy has no health so dies
-            enemyDie();
         }
         
     }
