@@ -8,7 +8,6 @@ public class BoulderSpawn : MonoBehaviour
     [SerializeField] float secondBoulder;
     [SerializeField] float minTras;
     [SerializeField] float maxTras;
-    private playerHealth playerHealth;
 
 
 
@@ -36,20 +35,9 @@ public class BoulderSpawn : MonoBehaviour
             
         }
     }
+}
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            getHit(100);
-    }
-}
-    public void getHit(float damage)
-    {
-        Debug.Log(damage);
-        playerHealth.takeDamage(damage);
-    }
-}
+
 
 //     public Transform spawnBoulder;
 //     public GameObject boulder;
