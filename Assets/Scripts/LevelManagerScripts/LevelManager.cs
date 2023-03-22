@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject PauseButton;
 
-    private bool canPause = false;
+    // private bool canPause = false;
 
     public void start()
     {
