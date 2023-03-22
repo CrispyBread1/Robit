@@ -6,14 +6,17 @@ public class SpikeRoomFloor : MonoBehaviour
 {
 
     
+    
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
 
-        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "FallingSpike")
         {
-            Destroy(collision.gameObject);
+
+            collision.gameObject.tag = "Untagged";
+            collision.transform.GetComponent<Spikes>().startResetTimer();
+            
             
         }
        

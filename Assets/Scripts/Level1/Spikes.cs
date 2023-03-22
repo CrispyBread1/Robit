@@ -12,15 +12,23 @@ public class Spikes : MonoBehaviour
     public float randomDropTime;
     private Rigidbody2D rigidBody;
     public Collider2D collide;
+    public Vector2 startingPosition;
+    public bool canDrop;
+
+    public float resetTimer;
+    public bool startTimer;
     
     void Start()
     {
 
         player = GameObject.FindGameObjectWithTag("Player");
-        playerInRange = 1f;
+        playerInRange = 16f;
         rigidBody = GetComponent<Rigidbody2D>();
-        randomDropTime = Random.Range(0f, 20f);
+        randomDropTime = Random.Range(0f, 10f);
         collide = GetComponent<Collider2D>();
+        startingPosition = transform.position;
+        startTimer = false;
+        canDrop = true;
 
     }
 
@@ -43,22 +51,35 @@ public class Spikes : MonoBehaviour
         //     gameObject.tag = "Untagged";
         // }
 
+        if (startTimer)
+        {
+            resetTimer += Time.deltaTime;
+        }
+
+        if (resetTimer >= 10)
+        {
+            reset();
+        }
+
+        if (canDrop)
+        {
+            timer += Time.deltaTime;
+        }
+
+        if (timer >= randomDropTime)
+        {
+            canDrop = false;
+            drop();
+        }
+
     }
 
 
     public void drop()
     {
-
-        while(timer <= randomDropTime)
-        {
-            timer += Time.deltaTime;
-        } 
         
-        if(timer >= randomDropTime)
-        {
-            rigidBody.mass = 10.0f;
-            rigidBody.WakeUp();
-        }
+        rigidBody.mass = 10.0f;
+        rigidBody.WakeUp();
         
     }
 
@@ -68,6 +89,29 @@ public class Spikes : MonoBehaviour
     //     Destroy(gameObject);
     // }
 
-    
+    public void startResetTimer()
+    {
+        startTimer = true;
+        
+    }
+
+    public void reset()
+    {
+        rigidBody.Sleep();
+        transform.position = startingPosition;
+        gameObject.tag = "FallingSpike";
+        startTimer = false;
+        resetTimer = 0;
+        distanceToPlayer = 0;
+        canDrop = true;
+    }
+
+    //  public void OnCollisionEnter2D(Collision2D collision)
+    //  {
+    //     if (collision.gameObject.tag == "Player")
+    //     {
+    //         reset();
+    //     }
+    //  }
 
 }
