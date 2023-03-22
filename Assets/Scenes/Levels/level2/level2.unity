@@ -11655,7 +11655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3916542422229634022, guid: 3740ac7b90ec04aee87695f101d4f5e1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -9.197
+      value: -0.000061035
       objectReference: {fileID: 0}
     - target: {fileID: 3916542422229634022, guid: 3740ac7b90ec04aee87695f101d4f5e1, type: 3}
       propertyPath: m_SizeDelta.y
@@ -11691,7 +11691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3916542422229634022, guid: 3740ac7b90ec04aee87695f101d4f5e1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4.597992
+      value: -0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 3916542422229634022, guid: 3740ac7b90ec04aee87695f101d4f5e1, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13337,7 +13337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6449177914592160949, guid: 118a0268dc1784fa99e44227213207bd, type: 3}
       propertyPath: orthographic size
-      value: 9.985313
+      value: 10.154967
       objectReference: {fileID: 0}
     - target: {fileID: 6449177914592160949, guid: 118a0268dc1784fa99e44227213207bd, type: 3}
       propertyPath: m_BackGroundColor.b
