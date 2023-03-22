@@ -7082,7 +7082,7 @@ Transform:
   - {fileID: 1394138619}
   - {fileID: 533427871}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1526988153 stripped
 GameObject:
@@ -11361,7 +11361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &3038828073066225148
 GameObject:
   m_ObjectHideFlags: 0
@@ -13722,7 +13722,7 @@ RectTransform:
   - {fileID: 6215758391207548948}
   - {fileID: 477953375641653864}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
