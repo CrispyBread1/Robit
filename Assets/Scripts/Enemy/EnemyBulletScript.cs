@@ -18,7 +18,7 @@ public class EnemyBulletScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         gameObject.tag = "Bullet";
-//used to give the coordinates of the player
+//used to add the player Object to the bullet when it it created
         player = GameObject.FindGameObjectWithTag("Player");
 
 

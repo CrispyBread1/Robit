@@ -95,8 +95,20 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "lava"){
             getHit(50);
         }
+ 
         if (collision.gameObject.tag == "mace"){
             getHit(25);
+
+        if (collision.gameObject.tag == "Spikes")
+        {
+            getHit(100);
+        }
+        if (collision.gameObject.tag == "FallingSpike")
+        {
+            Destroy(collision.gameObject);
+            getHit(50);
+
+
         }
 
     // if collided with enemy pass through a certain value to take health down by
@@ -104,7 +116,7 @@ public class Player : MonoBehaviour
 
     public void getHit(float damage)
     {
-        Debug.Log(damage);
+        // Debug.Log(damage);
         playerHealth.takeDamage(damage);
     }
 

@@ -19,6 +19,8 @@ TagManager:
   - GameOverScreen
   - HealthBar
   - ladder
+  - Spikes
+  - FallingSpike
   layers:
   - Default
   - TransparentFX

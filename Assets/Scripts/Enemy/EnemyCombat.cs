@@ -36,12 +36,13 @@ public class EnemyCombat : MonoBehaviour
     {
         canAttack = true;
         MeleeAttack();
+        animator.SetTrigger("Attack");
     }
 
     private void MeleeAttack()
     {
 
-        animator.SetTrigger("Attack");
+        
     
 // detect enemies in range of attack
 // this adda an invisible sphere around our attack point and it will give it a range we decide 
@@ -56,14 +57,18 @@ public class EnemyCombat : MonoBehaviour
         if (canAttack)
         {
             // Unity method used to find all the colliders that overlap with a circular area in 2D space.
-            hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
-        
+        // while (hitPlayers[0] = null)
+        // {
+        hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+        // }
+
         foreach (Collider2D player in hitPlayers)
 
         {
-                //damage them
-                player.GetComponent<Player>().getHit(enemyDamage);
-                canAttack = false;
+            Debug.Log(player);
+            //damage them
+            player.GetComponent<Player>().getHit(enemyDamage);
+            canAttack = false;
         }
         }
         
