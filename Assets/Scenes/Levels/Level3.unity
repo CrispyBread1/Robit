@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20584,6 +20584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 514884185}
+  - component: {fileID: 514884186}
   m_Layer: 5
   m_Name: LevelWin
   m_TagString: GameOverScreen
@@ -20614,6 +20615,22 @@ RectTransform:
   m_AnchoredPosition: {x: 11805.149, y: 4483.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &514884186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514884184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e31a8978f92e4530bc045c84f6b5c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  score: 0
+  scoreToCompleteLevel: 0
+  LevelCompleteScreen: {fileID: 0}
 --- !u!1 &515383828
 GameObject:
   m_ObjectHideFlags: 0
@@ -72744,7 +72761,7 @@ Camera:
   far clip plane: 1000
   field of view: 85
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 11.70614
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -72769,7 +72786,7 @@ Transform:
   m_GameObject: {fileID: 1845026596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -120.4, y: 38.5, z: -12.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0265, y: 1.0265, z: 1.0265}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 397921315}
@@ -85522,18 +85539,49 @@ PrefabInstance:
     - target: {fileID: 8123573120648384520, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: LevelCompleteScreen
       value: 
-      objectReference: {fileID: 8123573120011100455}
+      objectReference: {fileID: 514884184}
     - target: {fileID: 8123573120648384520, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: scoreToCompleteLevel
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8123573120648384521, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -603
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123573120648384521, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131173110288724089, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -358
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131173110288724089, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 239
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131173110444701009, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6818822
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131173110444701009, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6818822
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131173110444701009, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6818822
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131173110444701009, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -358
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131173110444701009, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 206
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
---- !u!1 &8123573120011100455 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6163000287165838566, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
-  m_PrefabInstance: {fileID: 8123573120011100454}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8123573120011100456 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6028575164044412206, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
