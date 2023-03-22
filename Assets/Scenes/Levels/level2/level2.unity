@@ -20203,6 +20203,7 @@ GameObject:
   - component: {fileID: 5735654768101989165}
   - component: {fileID: 5735654768101989166}
   - component: {fileID: 5735654768101989168}
+  - component: {fileID: 5735654768101989169}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -20346,6 +20347,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &5735654768101989169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735654768101989160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &6183193445754528759
 GameObject:
   m_ObjectHideFlags: 0
@@ -20687,7 +20705,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2147483647
 --- !u!1 &7100099790585333317
 GameObject:
   m_ObjectHideFlags: 0
