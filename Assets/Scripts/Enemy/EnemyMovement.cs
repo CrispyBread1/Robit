@@ -35,7 +35,6 @@ public class EnemyMovement : MonoBehaviour
     
     void Start()
     {
-
         player = GameObject.FindGameObjectWithTag("Player");
         enemy = GetComponent<Enemy>();
         enemyCombat = GetComponent<EnemyCombat>();
@@ -63,15 +62,12 @@ public class EnemyMovement : MonoBehaviour
         // transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
 
         // calculates the  X distance between the enemy and the player
-        xDistance = player.transform.position.x - transform.position.x;
-
-        //  X movement needed to reach the player at the wanted speed
-        xMovement = Mathf.Sign(xDistance) * speed * Time.deltaTime;
-        // xMovement = Mathf.Sign(xDistance) * speed * stepSize;
-
-        
-        
-        
+        if(player != null){
+            xDistance = player.transform.position.x - transform.position.x;
+            //  X movement needed to reach the player at the wanted speed
+            xMovement = Mathf.Sign(xDistance) * speed * Time.deltaTime;
+              // xMovement = Mathf.Sign(xDistance) * speed * stepSize;
+        }
         if (Mathf.Abs(xDistance) < distanceChase && allowedToMove){
         // if (xDistance < distanceChase && allowedToMove){
             // Debug.Log("I am moving");
@@ -123,7 +119,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" )
         {
             stopMoving();
         } 
@@ -132,7 +128,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void OnCollisionExit2D(Collision2D other)
     {   
-        if ( other.gameObject.tag == "Player"){
+        if ( other.gameObject.tag == "Player" ){
         startMoving();
         }
         // Debug.Log("enemy triggered");

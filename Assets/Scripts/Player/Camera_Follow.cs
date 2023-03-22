@@ -14,9 +14,12 @@ public class Camera_Follow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        // characterPostion is the character and uses the target variable to track teh postion (-10f because it is 2d)
+        if(target != null){
+            // characterPostion is the character and uses the target variable to track teh postion (-10f because it is 2d)
         // slerp = spherical interpolation which allows the camera to smoothly follow the target (character)
-        Vector3 characterPosition = new Vector3(target.position.x, target.position.y + cameraYoffsetposition, -10f);
-        transform.position= Vector3.Slerp(transform.position, characterPosition, FollowSpeed * Time.deltaTime);
+            Vector3 characterPosition = new Vector3(target.position.x, target.position.y + cameraYoffsetposition, -10f);
+            transform.position= Vector3.Slerp(transform.position, characterPosition, FollowSpeed * Time.deltaTime);
+        }
+        
     }
 }

@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
             playerBody.velocity = new Vector2(HorizontalInput * speed ,playerBody.velocity.y);
 
  // Flip the character if its numbers are looking at scales - 
-            if(HorizontalInput >0.01f){
+            if(HorizontalInput >0.01f && gameObject != null){
                 transform.localScale = new Vector3(6f,6f,6f);
             } else if(HorizontalInput < -0.01f){
                 transform.localScale = new Vector3(-6f,6f,6f);
@@ -95,6 +95,10 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "lava"){
             getHit(50);
         }
+ 
+        if (collision.gameObject.tag == "mace"){
+            getHit(25);
+
         if (collision.gameObject.tag == "Spikes")
         {
             getHit(100);
@@ -103,6 +107,7 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             getHit(50);
+
 
         }
 
