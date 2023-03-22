@@ -85456,7 +85456,7 @@ PrefabInstance:
     - target: {fileID: 6028575164044412200, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: PauseButton
       value: 
-      objectReference: {fileID: 1115228491}
+      objectReference: {fileID: 8123573120011100455}
     - target: {fileID: 6028575164044412204, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -85611,6 +85611,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+--- !u!1 &8123573120011100455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9131173110444701014, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+  m_PrefabInstance: {fileID: 8123573120011100454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8123573120011100456 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6028575164044412206, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
