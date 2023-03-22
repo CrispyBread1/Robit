@@ -146,4 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9722781662d8f4fb6a0a69f4d894a85b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rockMonster: {fileID: 8778451799282755167, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
+  rockMonster: {fileID: 9171698371786461268, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
