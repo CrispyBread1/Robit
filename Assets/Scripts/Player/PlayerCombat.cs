@@ -11,7 +11,7 @@ public class PlayerCombat : MonoBehaviour
     private bool canAttack;
     public LayerMask enemyLayers;
     public bool wontAttack = true;
-    public float attackSpeed = 1f;
+    public float attackSpeed = 0.6f;
     public float timer;
 
 
