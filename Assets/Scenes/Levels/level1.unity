@@ -218,7 +218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5335210641930005373, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
@@ -1166,7 +1166,7 @@ GameObject:
   - component: {fileID: 77823663}
   - component: {fileID: 77823662}
   - component: {fileID: 77823665}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (10)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -1307,9 +1307,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &90233519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2097,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &140321911
 Rigidbody2D:
   serializedVersion: 4
@@ -4438,7 +4446,7 @@ GameObject:
   - component: {fileID: 261175774}
   - component: {fileID: 261175773}
   - component: {fileID: 261175776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (3)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -4579,9 +4587,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &283637753
 GameObject:
   m_ObjectHideFlags: 0
@@ -5111,7 +5123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9171698371786461268, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4376a93fd2b76424a8ded0215490f5de, type: 3}
@@ -9835,6 +9847,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &733318279
 Rigidbody2D:
   serializedVersion: 4
@@ -10108,6 +10124,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &756694260
 Rigidbody2D:
   serializedVersion: 4
@@ -10471,7 +10491,7 @@ GameObject:
   - component: {fileID: 783033755}
   - component: {fileID: 783033754}
   - component: {fileID: 783033757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (5)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -10612,9 +10632,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &785145835
 GameObject:
   m_ObjectHideFlags: 0
@@ -11078,7 +11102,7 @@ GameObject:
   - component: {fileID: 821715861}
   - component: {fileID: 821715860}
   - component: {fileID: 821715863}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (2)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -11219,9 +11243,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &840013295
 GameObject:
   m_ObjectHideFlags: 0
@@ -11483,6 +11511,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &857624419
 Rigidbody2D:
   serializedVersion: 4
@@ -11986,6 +12018,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &901359445
 Rigidbody2D:
   serializedVersion: 4
@@ -12350,7 +12386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5335210641930005373, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
@@ -13399,6 +13435,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &1002729188
 Rigidbody2D:
   serializedVersion: 4
@@ -14245,6 +14285,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &1038296635
 Rigidbody2D:
   serializedVersion: 4
@@ -16425,6 +16469,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &1167629041
 Rigidbody2D:
   serializedVersion: 4
@@ -16953,6 +17001,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &1204101343
 Rigidbody2D:
   serializedVersion: 4
@@ -20607,6 +20659,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &1524342605
 Rigidbody2D:
   serializedVersion: 4
@@ -20755,7 +20811,7 @@ GameObject:
   - component: {fileID: 1529937207}
   - component: {fileID: 1529937206}
   - component: {fileID: 1529937209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (9)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -20896,9 +20952,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &1536068965
 GameObject:
   m_ObjectHideFlags: 0
@@ -21267,6 +21327,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &1539647850
 Rigidbody2D:
   serializedVersion: 4
@@ -24206,7 +24270,7 @@ GameObject:
   - component: {fileID: 1699625701}
   - component: {fileID: 1699625700}
   - component: {fileID: 1699625703}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (4)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -24347,9 +24411,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &1706415004
 GameObject:
   m_ObjectHideFlags: 0
@@ -24363,7 +24431,7 @@ GameObject:
   - component: {fileID: 1706415007}
   - component: {fileID: 1706415006}
   - component: {fileID: 1706415009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (8)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -24504,9 +24572,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &1710419302
 GameObject:
   m_ObjectHideFlags: 0
@@ -25859,7 +25931,7 @@ GameObject:
   - component: {fileID: 1798880481}
   - component: {fileID: 1798880480}
   - component: {fileID: 1798880484}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -26031,9 +26103,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &1799694090
 GameObject:
   m_ObjectHideFlags: 0
@@ -26525,7 +26601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5335210641930005373, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca8c4c2bfe7b42cab879ee5bd9c74e0, type: 3}
@@ -27085,7 +27161,7 @@ GameObject:
   - component: {fileID: 1843460797}
   - component: {fileID: 1843460796}
   - component: {fileID: 1843460799}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (7)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -27226,9 +27302,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &1843470211
 GameObject:
   m_ObjectHideFlags: 0
@@ -28349,7 +28429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897890583}
   m_LocalRotation: {x: -0, y: -0, z: 0.9997596, w: -0.021925017}
-  m_LocalPosition: {x: -0.31, y: 0.64, z: 0}
+  m_LocalPosition: {x: -0.31, y: 0.64, z: -0.1}
   m_LocalScale: {x: 0.86592436, y: -0.83575404, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28673,7 +28753,7 @@ GameObject:
   - component: {fileID: 1915334583}
   - component: {fileID: 1915334582}
   - component: {fileID: 1915334585}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (6)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -28814,9 +28894,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &1916326071
 GameObject:
   m_ObjectHideFlags: 0
@@ -30366,6 +30450,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &2061484928
 Rigidbody2D:
   serializedVersion: 4
@@ -30555,6 +30643,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &2064742686
 Rigidbody2D:
   serializedVersion: 4
@@ -31226,6 +31318,10 @@ MonoBehaviour:
   playerInRange: 0
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!50 &2093423534
 Rigidbody2D:
   serializedVersion: 4
@@ -31542,7 +31638,7 @@ GameObject:
   - component: {fileID: 2099165291}
   - component: {fileID: 2099165290}
   - component: {fileID: 2099165293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (11)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -31683,9 +31779,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &2099254176
 GameObject:
   m_ObjectHideFlags: 0
@@ -32367,7 +32467,7 @@ GameObject:
   - component: {fileID: 2134180083}
   - component: {fileID: 2134180082}
   - component: {fileID: 2134180085}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spike (1)
   m_TagString: FallingSpike
   m_Icon: {fileID: 0}
@@ -32508,9 +32608,13 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 0}
   distanceToPlayer: 0
-  playerInRange: 0
+  playerInRange: 16
   randomDropTime: 0
   collide: {fileID: 0}
+  startingPosition: {x: 0, y: 0}
+  canDrop: 0
+  resetTimer: 0
+  startTimer: 0
 --- !u!1 &2137090095
 GameObject:
   m_ObjectHideFlags: 0
@@ -32947,6 +33051,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5904838866895970400, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: c88ec404ac30240ddbb1845b691624bb, type: 2}
+    - target: {fileID: 5904838866895970403, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: c88ec404ac30240ddbb1845b691624bb, type: 2}
     - target: {fileID: 5904838866895970406, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: healthbar
       value: 
@@ -32965,11 +33077,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 37.6
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.1
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 5904838866895970412, guid: f62f300c6fbe0421db83b58bbfa1a31e, type: 3}
       propertyPath: m_LocalPosition.z

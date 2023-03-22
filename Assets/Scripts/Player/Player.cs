@@ -96,19 +96,18 @@ public class Player : MonoBehaviour
             getHit(50);
         }
  
-        if (collision.gameObject.tag == "mace"){
+        if (collision.gameObject.tag == "mace")
+        {
             getHit(25);
-
+        }
         if (collision.gameObject.tag == "Spikes")
         {
             getHit(100);
         }
         if (collision.gameObject.tag == "FallingSpike")
         {
-            Destroy(collision.gameObject);
+            collision.transform.GetComponent<Spikes>().reset();
             getHit(50);
-
-
         }
 
     // if collided with enemy pass through a certain value to take health down by

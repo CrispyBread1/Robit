@@ -21,6 +21,8 @@ TagManager:
   - ladder
   - Spikes
   - FallingSpike
+  - mace
+  - FallenSpike
   layers:
   - Default
   - TransparentFX

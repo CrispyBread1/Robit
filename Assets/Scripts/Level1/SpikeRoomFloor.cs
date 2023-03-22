@@ -14,7 +14,7 @@ public class SpikeRoomFloor : MonoBehaviour
         if (collision.gameObject.tag == "FallingSpike")
         {
 
-            collision.gameObject.tag = "Untagged";
+            collision.gameObject.tag = "FallenSpike";
             collision.transform.GetComponent<Spikes>().startResetTimer();
             
             

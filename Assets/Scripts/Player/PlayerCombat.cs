@@ -59,7 +59,12 @@ public class PlayerCombat : MonoBehaviour
             foreach (Collider2D enemy in hitEnemies)
 //damage them
             {
-            enemy.GetComponent<Enemy>().takeDamage(50);
+                if(enemy.transform.gameObject.tag == "FallenSpike")
+                {
+                    enemy.transform.GetComponent<Spikes>().reset();
+                }
+
+                enemy.GetComponent<Enemy>().takeDamage(50);
             }
         }
     }
