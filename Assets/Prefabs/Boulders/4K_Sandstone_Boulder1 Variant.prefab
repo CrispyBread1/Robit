@@ -37,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451530, guid: 401ddd0d0ea3e4740bf6ee4a51b216d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 451530, guid: 401ddd0d0ea3e4740bf6ee4a51b216d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -141,6 +141,17 @@ PolygonCollider2D:
       - {x: -0.23116182, y: -0.2881024}
       - {x: 0.18344279, y: -0.2881024}
       - {x: 0.3115626, y: 0.106210046}
+--- !u!210 &1146237452769050099
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4327700145926177070}
+  m_Enabled: 1
+  m_SortingLayerID: -2068035815
+  m_SortingLayer: -2
+  m_SortingOrder: 0
 --- !u!114 &-4162092791604579204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,3 +165,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
+  player: {fileID: 0}
+  health: {fileID: 0}

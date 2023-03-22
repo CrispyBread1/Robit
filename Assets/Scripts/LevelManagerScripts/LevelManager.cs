@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject PauseButton;
 
-    private bool canPause = false;
+    // private bool canPause = false;
 
     public void start()
     {
@@ -36,10 +36,12 @@ public class LevelManager : MonoBehaviour
 
     public void RestartGame()
     {
+
+        Debug.Log("iam pressed");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         // gameOverScreen = new GameObject();
         // DeathScreen.SetActive(true);
-}
+    }
 
     public void pauseGame()
     {
