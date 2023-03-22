@@ -2055,7 +2055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &64236194
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8002,7 +8002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &213883910
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8803,7 +8803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &235703749
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9965,7 +9965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &259100908
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12953,7 +12953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &328324116
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13089,7 +13089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &329315070
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17417,7 +17417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &448644164
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19975,7 +19975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &502917091
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23060,7 +23060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &578683936
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24138,7 +24138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &604405579
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24358,7 +24358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &607215332
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24494,7 +24494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &610451766
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25790,7 +25790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &655883153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33240,7 +33240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &856782059
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -44610,7 +44610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1118168125
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -48899,7 +48899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1238955991
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -55178,7 +55178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1419678179
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -56124,7 +56124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1454727765
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -57448,7 +57448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1496883127
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -60212,7 +60212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1545121031
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -61589,7 +61589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1580412776
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -65009,7 +65009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1654317986
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -66253,7 +66253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1679176798
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74817,7 +74817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &1890919691
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79439,7 +79439,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 55.882847, y: -0.40909886}
+  m_Offset: {x: 55.882847, y: -0.04564786}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -79450,7 +79450,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 119.6457, y: 5.4818025}
+  m_Size: {x: 119.6457, y: 6.2087045}
   m_EdgeRadius: 0
 --- !u!1 &2000584793
 GameObject:
@@ -82699,7 +82699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f8c2a2362c144bf85c038e59ca55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalValue: 5
+  crystalValue: 1
 --- !u!60 &2073739917
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -84820,6 +84820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 665511797}
     m_Modifications:
+    - target: {fileID: 3494123322739918944, guid: 031e4166108d34b6eb9d79b80018a14a, type: 3}
+      propertyPath: crystalValue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3494123322739918948, guid: 031e4166108d34b6eb9d79b80018a14a, type: 3}
       propertyPath: m_Name
       value: Crystal_03

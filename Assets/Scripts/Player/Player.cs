@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     private RespawnScript respawnScript;
     private Animator animator;
     private playerHealth playerHealth;
-    public int crystalValue = 5;
+    // public int crystalValue = 5;
     private int JumpAmount;
     private bool canMove = true;
 
