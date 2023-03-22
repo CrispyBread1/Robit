@@ -10,6 +10,8 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
     public TextMeshProUGUI text;
     public int  score;
+    public int scoreToCompleteLevel;
+    public GameObject LevelCompleteScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +28,14 @@ public class ScoreManager : MonoBehaviour
         score += scoreValue;
         text.text = "X" + score.ToString();
 
+    }
+
+    public void Update()
+    {
+        if(score >= scoreToCompleteLevel)
+        {
+            Debug.Log("levelCOMplete");
+            LevelCompleteScreen.SetActive(true);
+        }
     }
 }
