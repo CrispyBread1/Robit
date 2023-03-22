@@ -129,6 +129,17 @@ PolygonCollider2D:
       - {x: -0.23322164, y: -0.32100213}
       - {x: 0.23322171, y: -0.32100207}
       - {x: 0.37736058, y: 0.12261194}
+--- !u!210 &-5879688554044253735
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5520835815395500798}
+  m_Enabled: 1
+  m_SortingLayerID: -757974621
+  m_SortingLayer: -1
+  m_SortingOrder: 0
 --- !u!114 &-3029962251785168023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,3 +153,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
+  player: {fileID: 0}
+  health: {fileID: 0}
