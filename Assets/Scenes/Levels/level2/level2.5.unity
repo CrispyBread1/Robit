@@ -11041,7 +11041,7 @@ GameObject:
   - component: {fileID: 6725188056551371449}
   - component: {fileID: 139238371973536896}
   m_Layer: 5
-  m_Name: volcano
+  m_Name: dungeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13029,7 +13029,7 @@ Animator:
   m_GameObject: {fileID: 807473482403580935}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: af827416208ff41a2b27ee5cc6d32298, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7d853c13d57ab4f5cb00ac8e611250db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
