@@ -31761,6 +31761,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6028575164022453364}
     m_Modifications:
+    - target: {fileID: 974843051527645599, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1260216224009019882, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -31803,11 +31807,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2682978442505339314, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5794864077825648613, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5794864077825648613, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -93
       objectReference: {fileID: 0}
     - target: {fileID: 6837603764348715605, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -31932,6 +31940,14 @@ PrefabInstance:
     - target: {fileID: 8936581307918905158, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936581307918905158, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 224.5655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936581307918905158, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 9073096993582809834, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
