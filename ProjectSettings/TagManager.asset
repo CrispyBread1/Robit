@@ -60,6 +60,9 @@ TagManager:
   - name: background
     uniqueID: 3569979597
     locked: 0
+  - name: forefrontdecor
+    uniqueID: 3944010643
+    locked: 0
   - name: insidelava
     uniqueID: 4290171429
     locked: 0
