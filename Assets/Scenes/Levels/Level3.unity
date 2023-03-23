@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -44617,6 +44617,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1115228491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9131173110444701014, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+  m_PrefabInstance: {fileID: 8123573120011100454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1116367551
 GameObject:
   m_ObjectHideFlags: 0
@@ -85448,6 +85453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas/LevelManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6028575164044412200, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: PauseButton
+      value: 
+      objectReference: {fileID: 8123573120011100455}
     - target: {fileID: 6028575164044412204, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -85540,6 +85549,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8123573119028971030, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1369.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123573119028971030, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 732.769
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123573119028971030, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 84.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123573119028971030, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -39.73
+      objectReference: {fileID: 0}
     - target: {fileID: 8123573120648384520, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: LevelCompleteScreen
       value: 
@@ -85550,19 +85575,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8123573120648384521, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -603
+      value: -619
       objectReference: {fileID: 0}
     - target: {fileID: 8123573120648384521, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -270
+      value: -298
       objectReference: {fileID: 0}
     - target: {fileID: 9131173110288724089, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -358
+      value: -334
       objectReference: {fileID: 0}
     - target: {fileID: 9131173110288724089, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 239
+      value: 191
       objectReference: {fileID: 0}
     - target: {fileID: 9131173110444701009, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_LocalScale.x
@@ -85578,14 +85603,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9131173110444701009, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -358
+      value: -333
       objectReference: {fileID: 0}
     - target: {fileID: 9131173110444701009, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 206
+      value: 166
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+--- !u!1 &8123573120011100455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9131173110444701014, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
+  m_PrefabInstance: {fileID: 8123573120011100454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8123573120011100456 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6028575164044412206, guid: f26d6b87785ef4f5f980737ffc1eaf90, type: 3}
