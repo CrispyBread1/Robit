@@ -13219,7 +13219,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1037, y: 543}
+  m_AnchoredPosition: {x: 1037, y: 529.7}
   m_SizeDelta: {x: 76.7417, y: 76.7417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &919890272
@@ -30124,7 +30124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1125, y: 545}
+  m_AnchoredPosition: {x: 1125, y: 528.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874155708
@@ -35759,6 +35759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelWin
       objectReference: {fileID: 0}
+    - target: {fileID: 1812062682983699416, guid: c8cda0a8b3c9646cf84281456b0fd682, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1825835944193134487, guid: c8cda0a8b3c9646cf84281456b0fd682, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -36757,7 +36761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -338, y: 174}
+  m_AnchoredPosition: {x: -337, y: 154}
   m_SizeDelta: {x: 101.06, y: 13.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9131173110424749064
@@ -36872,7 +36876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -342, y: 154}
+  m_AnchoredPosition: {x: -342, y: 134}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9131173110424749068

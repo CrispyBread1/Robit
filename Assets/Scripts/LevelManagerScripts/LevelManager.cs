@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public GameObject PauseMenu;
-    public GameObject PauseButton;
+    // public GameObject PauseButton;
 
     // private bool canPause = false;
 
@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour
     public void RestartGame()
     {
 
-        Debug.Log("iam pressed");
+        // Debug.Log("iam pressed");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         // gameOverScreen = new GameObject();
         // DeathScreen.SetActive(true);
@@ -47,7 +47,7 @@ public class LevelManager : MonoBehaviour
     {
     
         PauseMenu.SetActive(true);  
-        PauseButton.SetActive(false);
+        // PauseButton.SetActive(false);
         // pauses whole game 
         Time.timeScale = 0;     
     }
@@ -56,7 +56,7 @@ public class LevelManager : MonoBehaviour
     {
         
         PauseMenu.SetActive(false); 
-        PauseButton.SetActive(true);
+        // PauseButton.SetActive(true);
         //starts game again
         Time.timeScale = 1;
     }
