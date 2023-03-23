@@ -31807,7 +31807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2682978442505339314, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5794864077825648613, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_RootOrder
@@ -31824,6 +31824,22 @@ PrefabInstance:
     - target: {fileID: 6837603764348715605, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: unPauseGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6837603764401435970, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 425.7119
+      objectReference: {fileID: 0}
+    - target: {fileID: 6837603764401435970, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 205.6779
+      objectReference: {fileID: 0}
+    - target: {fileID: 6837603764401435970, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.5478
+      objectReference: {fileID: 0}
+    - target: {fileID: 6837603764401435970, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.4394
       objectReference: {fileID: 0}
     - target: {fileID: 6837603764666075769, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_Pivot.x
@@ -31932,6 +31948,10 @@ PrefabInstance:
     - target: {fileID: 6988573282160630399, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_Color.r
       value: 0.29803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349955104259574563, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
+      propertyPath: m_margin.x
+      value: -0.94486237
       objectReference: {fileID: 0}
     - target: {fileID: 8270964469556745594, guid: 6da1b3ed7ff274df0aae58a02cc77498, type: 3}
       propertyPath: m_RootOrder
@@ -36406,8 +36426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.4146996, y: 0.85369873}
-  m_SizeDelta: {x: 681.7443, y: 309.9515}
+  m_AnchoredPosition: {x: 5.6908, y: -2.5804}
+  m_SizeDelta: {x: 731.7007, y: 388.9326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6028575164204308863
 MonoBehaviour:
